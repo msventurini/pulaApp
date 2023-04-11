@@ -16,13 +16,11 @@ struct ContentView: View {
             ForEach(EventList.events) { event in
                 HStack {
                     Image(String(event.image))
-//                        .resizable()
                         .aspectRatio(contentMode: .fit)
-                    VStack (alignment: .center){
-                        Text(event.date.formatted(date: .numeric, time: .omitted))
+                    VStack (alignment: .leading){
+                        Text(event.date.formatted(.dateTime.day()) + "." + event.date.formatted(.dateTime.month(.twoDigits)))
                             .font(.body)
                             .bold()
-                        
                         Text(event.name)
                             .font(.body)
                     }
