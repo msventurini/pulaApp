@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		737F89D829E5EBE900AC1C19 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 737F89D729E5EBE900AC1C19 /* MainView.swift */; };
 		73E7A04729E5D27F0019A979 /* DestaqueView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73E7A04629E5D27F0019A979 /* DestaqueView.swift */; };
 		73E7A04929E5D2E10019A979 /* DestaquesHStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73E7A04829E5D2E10019A979 /* DestaquesHStack.swift */; };
 		73E7A04B29E5D4280019A979 /* FestivaisPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73E7A04A29E5D4280019A979 /* FestivaisPage.swift */; };
@@ -20,6 +21,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		737F89D729E5EBE900AC1C19 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		73E7A04629E5D27F0019A979 /* DestaqueView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DestaqueView.swift; sourceTree = "<group>"; };
 		73E7A04829E5D2E10019A979 /* DestaquesHStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DestaquesHStack.swift; sourceTree = "<group>"; };
 		73E7A04A29E5D4280019A979 /* FestivaisPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FestivaisPage.swift; sourceTree = "<group>"; };
@@ -63,6 +65,7 @@
 		EA5F37BD29E494C100D7DE04 /* PulaApp */ = {
 			isa = PBXGroup;
 			children = (
+				737F89D729E5EBE900AC1C19 /* MainView.swift */,
 				73E7A04829E5D2E10019A979 /* DestaquesHStack.swift */,
 				73E7A04A29E5D4280019A979 /* FestivaisPage.swift */,
 				73E7A04629E5D27F0019A979 /* DestaqueView.swift */,
@@ -156,6 +159,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EAA5560B29E4E2DB006B91E7 /* Event.swift in Sources */,
+				737F89D829E5EBE900AC1C19 /* MainView.swift in Sources */,
 				EA5F37C129E494C100D7DE04 /* ContentView.swift in Sources */,
 				73E7A04B29E5D4280019A979 /* FestivaisPage.swift in Sources */,
 				EA5F37BF29E494C100D7DE04 /* PulaAppApp.swift in Sources */,
