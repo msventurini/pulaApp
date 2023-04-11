@@ -9,17 +9,36 @@ import SwiftUI
 
 struct DestaquesHStack: View {
     
+    var eventList: [Event]
+    var eventsType: String
+    
     var body: some View {
-        ScrollView(.horizontal){
-            HStack{
-                ForEach(EventList.events){ event in
-                    var date: String = event.date.formatted(.dateTime.day()) + "." + event.date.formatted(.dateTime.month(.twoDigits)) + " | " + event.date.formatted(.dateTime.hour())
+        VStack(alignment: .leading){
+            //HStack{
+                Text(eventsType)
+                    .font(.title2)
+                    .fontWeight(.semibold)
+                    .padding(.bottom)
+                //Spacer()
+                //Button("Ver Tudo"){
                     
-                    
-                    
-                    destaqueView(eventName: event.name, imageName: event.image, date: date, location: event.location)
+                //}
+                //.foregroundColor(Color(.systemBlue))
+                //.padding(.trailing)
+            //}
+            
+            ScrollView(.horizontal){
+                HStack{
+                    ForEach(eventList){ event in
+                        var date: String = event.date.formatted(.dateTime.day()) + "." + event.date.formatted(.dateTime.month(.twoDigits)) + " | " + event.date.formatted(.dateTime.hour())
+                        
+                        
+                        
+                        destaqueView(eventName: event.name, imageName: event.image, date: date, location: event.location)
+                    }
                 }
             }
+            //.padding()
         }
     }
 }
@@ -27,6 +46,6 @@ struct DestaquesHStack: View {
 
 struct DestaquesHStack_Previews: PreviewProvider {
     static var previews: some View {
-        DestaquesHStack()
+        DestaquesHStack(eventList: EventList.events, eventsType: "Destaques")
     }
 }
