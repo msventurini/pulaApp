@@ -11,29 +11,27 @@ struct ContentView: View {
     var body: some View {
         VStack {
             
-                
+            
+            
+            ForEach(EventList.events) { event in
                 HStack {
-                    Image("fig1")
-                        .resizable()
+                    Image(String(event.image))
+//                        .resizable()
                         .aspectRatio(contentMode: .fit)
                     VStack (alignment: .center){
                         Text("Data")
                             .font(.body)
                             .bold()
-
+                        
                         Text("Nome")
                             .font(.body)
-                            
                     }
-                    
                 }
-                .frame(height: 48)
-                
-                
+            }
             
             
-
-                            
+            
+            
         }
         .padding()
     }
