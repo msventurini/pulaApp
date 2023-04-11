@@ -9,7 +9,21 @@ import SwiftUI
 
 struct onboardingCard: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        VStack {
+            Spacer()
+            VStack {
+                TabView{
+                    onboardingContent()
+                    onboardingContent2()
+                    onboardingContent3()
+                }
+                .tabViewStyle(.page)
+                .background(.purple)
+                Button ()
+                    .primary
+            }
+            .accessibilityLabel("Pular")
+        }
     }
 }
 

@@ -9,7 +9,28 @@ import SwiftUI
 
 struct onboardingContent3: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        VStack{
+            //title
+
+            Text("Melhorar sua experiência")
+                .font(.largeTitle)
+                .fontWeight(.semibold)
+                .multilineTextAlignment(.center)
+            
+            //subtitle
+            Text("Here’s a title that can be used and can span multiple lines.Here’s a title that can be used and can span multiple lines.Here’s a title that can be used and can span multiple lines.Here’s a title that can be used and can span multiple lines.")
+                .font(.body)
+                .multilineTextAlignment(.center)
+                .padding(.top, 1.0)
+
+            //button "saiba mais..."
+            Text("Saiba como melhorar sua experiência")
+                .font(.callout)
+                .fontWeight(.semibold)
+                .foregroundColor(Color.blue)
+                .padding(.top, 1.0)
+        }
+        .padding(.all, 5.0)
     }
 }
 

@@ -9,6 +9,7 @@ import SwiftUI
 
 struct onboardingContent: View {
     var body: some View {
+        // Onboarding content 1
         VStack {
             Text("Boas-vindas ao App Pula!")
                 .font(.largeTitle)
