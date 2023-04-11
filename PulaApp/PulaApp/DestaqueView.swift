@@ -44,6 +44,5 @@ struct destaqueView: View {
 struct destaqueView_Previews: PreviewProvider {
     static var previews: some View {
         destaqueView(eventName: "negocio", imageName: "fig1", date: "hora dia", location: "Charqueadas")
-                     
-                     }
+    }
 }
