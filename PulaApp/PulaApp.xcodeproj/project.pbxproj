@@ -20,8 +20,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		73E7A04629E5D27F0019A979 /* DestaqueView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = DestaqueView.swift; path = ../DestaqueView.swift; sourceTree = "<group>"; };
-		73E7A04829E5D2E10019A979 /* DestaquesHStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = DestaquesHStack.swift; path = ../DestaquesHStack.swift; sourceTree = "<group>"; };
+		73E7A04629E5D27F0019A979 /* DestaqueView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DestaqueView.swift; sourceTree = "<group>"; };
+		73E7A04829E5D2E10019A979 /* DestaquesHStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DestaquesHStack.swift; sourceTree = "<group>"; };
 		73E7A04A29E5D4280019A979 /* FestivaisPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FestivaisPage.swift; sourceTree = "<group>"; };
 		EA5F37BB29E494C100D7DE04 /* PulaApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PulaApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EA5F37BE29E494C100D7DE04 /* PulaAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PulaAppApp.swift; sourceTree = "<group>"; };
