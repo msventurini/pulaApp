@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		73E7A04729E5D27F0019A979 /* DestaqueView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73E7A04629E5D27F0019A979 /* DestaqueView.swift */; };
+		73E7A04929E5D2E10019A979 /* DestaquesHStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73E7A04829E5D2E10019A979 /* DestaquesHStack.swift */; };
+		73E7A04B29E5D4280019A979 /* FestivaisPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73E7A04A29E5D4280019A979 /* FestivaisPage.swift */; };
 		EA5F37BF29E494C100D7DE04 /* PulaAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA5F37BE29E494C100D7DE04 /* PulaAppApp.swift */; };
 		EA5F37C129E494C100D7DE04 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA5F37C029E494C100D7DE04 /* ContentView.swift */; };
 		EA5F37C329E494C200D7DE04 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EA5F37C229E494C200D7DE04 /* Assets.xcassets */; };
@@ -17,6 +20,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		73E7A04629E5D27F0019A979 /* DestaqueView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = DestaqueView.swift; path = ../DestaqueView.swift; sourceTree = "<group>"; };
+		73E7A04829E5D2E10019A979 /* DestaquesHStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = DestaquesHStack.swift; path = ../DestaquesHStack.swift; sourceTree = "<group>"; };
+		73E7A04A29E5D4280019A979 /* FestivaisPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FestivaisPage.swift; sourceTree = "<group>"; };
 		EA5F37BB29E494C100D7DE04 /* PulaApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PulaApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EA5F37BE29E494C100D7DE04 /* PulaAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PulaAppApp.swift; sourceTree = "<group>"; };
 		EA5F37C029E494C100D7DE04 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -57,6 +63,9 @@
 		EA5F37BD29E494C100D7DE04 /* PulaApp */ = {
 			isa = PBXGroup;
 			children = (
+				73E7A04829E5D2E10019A979 /* DestaquesHStack.swift */,
+				73E7A04A29E5D4280019A979 /* FestivaisPage.swift */,
+				73E7A04629E5D27F0019A979 /* DestaqueView.swift */,
 				EAA5560829E4DC11006B91E7 /* EventCategory.swift */,
 				EA5F37BE29E494C100D7DE04 /* PulaAppApp.swift */,
 				EA5F37C029E494C100D7DE04 /* ContentView.swift */,
@@ -148,8 +157,11 @@
 			files = (
 				EAA5560B29E4E2DB006B91E7 /* Event.swift in Sources */,
 				EA5F37C129E494C100D7DE04 /* ContentView.swift in Sources */,
+				73E7A04B29E5D4280019A979 /* FestivaisPage.swift in Sources */,
 				EA5F37BF29E494C100D7DE04 /* PulaAppApp.swift in Sources */,
+				73E7A04929E5D2E10019A979 /* DestaquesHStack.swift in Sources */,
 				EAA5560D29E4FEC6006B91E7 /* EventList.swift in Sources */,
+				73E7A04729E5D27F0019A979 /* DestaqueView.swift in Sources */,
 				EAA5560929E4DC11006B91E7 /* EventCategory.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
