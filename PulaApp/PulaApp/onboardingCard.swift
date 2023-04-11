@@ -17,12 +17,35 @@ struct onboardingCard: View {
                     onboardingContent2()
                     onboardingContent3()
                 }
-                .tabViewStyle(.page)
-                .background(.purple)
-                Button ()
-                    .primary
+                .tabViewStyle(.page) //paginação
+                .indexViewStyle(.page(backgroundDisplayMode: .always)) // cor da paginação
+
+                
+                //btn next
+                Button(action: {
+                    
+                }, label: {
+                    Text("Próximo")
+                        .font(.body)
+                        .fontWeight(.semibold)
+                        .padding(.all, 16.0)
+                        .background(.gray)
+                        .cornerRadius(10)
+                        .foregroundColor(.black)
+                })
+                
+                
+                //btn skip
+                Button(action: {
+                    
+                }, label: {
+                    Text("Pular")
+                        .font(.body)
+                        .padding(.vertical)
+                        .foregroundColor(.blue)
+                })
             }
-            .accessibilityLabel("Pular")
+            //.background(.red)
         }
     }
 }
