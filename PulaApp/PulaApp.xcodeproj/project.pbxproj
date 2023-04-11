@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		68A5809529E5D0EA00F74587 /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68A5809429E5D0EA00F74587 /* Category.swift */; };
+		68A5809729E5D70900F74587 /* CategoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68A5809629E5D70900F74587 /* CategoryView.swift */; };
 		EA5F37BF29E494C100D7DE04 /* PulaAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA5F37BE29E494C100D7DE04 /* PulaAppApp.swift */; };
 		EA5F37C129E494C100D7DE04 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA5F37C029E494C100D7DE04 /* ContentView.swift */; };
 		EA5F37C329E494C200D7DE04 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EA5F37C229E494C200D7DE04 /* Assets.xcassets */; };
@@ -17,6 +19,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		68A5809429E5D0EA00F74587 /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
+		68A5809629E5D70900F74587 /* CategoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryView.swift; sourceTree = "<group>"; };
 		EA5F37BB29E494C100D7DE04 /* PulaApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PulaApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EA5F37BE29E494C100D7DE04 /* PulaAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PulaAppApp.swift; sourceTree = "<group>"; };
 		EA5F37C029E494C100D7DE04 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -58,6 +62,8 @@
 			isa = PBXGroup;
 			children = (
 				EAA5560829E4DC11006B91E7 /* EventCategory.swift */,
+				68A5809429E5D0EA00F74587 /* Category.swift */,
+				68A5809629E5D70900F74587 /* CategoryView.swift */,
 				EA5F37BE29E494C100D7DE04 /* PulaAppApp.swift */,
 				EA5F37C029E494C100D7DE04 /* ContentView.swift */,
 				EAA5560A29E4E2DB006B91E7 /* Event.swift */,
@@ -147,10 +153,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				EAA5560B29E4E2DB006B91E7 /* Event.swift in Sources */,
+				68A5809729E5D70900F74587 /* CategoryView.swift in Sources */,
 				EA5F37C129E494C100D7DE04 /* ContentView.swift in Sources */,
 				EA5F37BF29E494C100D7DE04 /* PulaAppApp.swift in Sources */,
 				EAA5560D29E4FEC6006B91E7 /* EventList.swift in Sources */,
 				EAA5560929E4DC11006B91E7 /* EventCategory.swift in Sources */,
+				68A5809529E5D0EA00F74587 /* Category.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
