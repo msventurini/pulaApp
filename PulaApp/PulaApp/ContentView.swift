@@ -19,11 +19,11 @@ struct ContentView: View {
 //                        .resizable()
                         .aspectRatio(contentMode: .fit)
                     VStack (alignment: .center){
-                        Text("Data")
+                        Text(event.date.formatted(date: .numeric, time: .omitted))
                             .font(.body)
                             .bold()
                         
-                        Text("Nome")
+                        Text(event.name)
                             .font(.body)
                     }
                 }
