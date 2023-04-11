@@ -29,7 +29,7 @@ struct onboardingCard: View {
                         .font(.body)
                         .fontWeight(.semibold)
                         .padding(.all, 16.0)
-                        .background(.gray)
+                        .background(Color(uiColor: UIColor.systemGray5))
                         .cornerRadius(10)
                         .foregroundColor(.black)
                 })
