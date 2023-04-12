@@ -15,3 +15,5 @@ struct EventList {
         Event.init(id: 4, name: "Teste 4", date: Date(), description: "Evento 4", location: "Viamao", image: "fig4"),
     ]
 }
+
+
