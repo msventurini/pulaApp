@@ -17,6 +17,7 @@
 		EA59A04129E6E247008BF790 /* FavoritesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA59A04029E6E247008BF790 /* FavoritesView.swift */; };
 		EA59A04629E6E3D5008BF790 /* EventCategoryList.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA59A04529E6E3D5008BF790 /* EventCategoryList.swift */; };
 		EA59A04829E6E54B008BF790 /* IconSize.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA59A04729E6E54B008BF790 /* IconSize.swift */; };
+		EA59A04D29E6E7A8008BF790 /* MapIconsDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA59A04C29E6E7A8008BF790 /* MapIconsDemo.swift */; };
 		EA5F37BF29E494C100D7DE04 /* PulaAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA5F37BE29E494C100D7DE04 /* PulaAppApp.swift */; };
 		EA5F37C129E494C100D7DE04 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA5F37C029E494C100D7DE04 /* ContentView.swift */; };
 		EA5F37C329E494C200D7DE04 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EA5F37C229E494C200D7DE04 /* Assets.xcassets */; };
@@ -37,6 +38,7 @@
 		EA59A04029E6E247008BF790 /* FavoritesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesView.swift; sourceTree = "<group>"; };
 		EA59A04529E6E3D5008BF790 /* EventCategoryList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventCategoryList.swift; sourceTree = "<group>"; };
 		EA59A04729E6E54B008BF790 /* IconSize.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IconSize.swift; sourceTree = "<group>"; };
+		EA59A04C29E6E7A8008BF790 /* MapIconsDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapIconsDemo.swift; sourceTree = "<group>"; };
 		EA5F37BB29E494C100D7DE04 /* PulaApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PulaApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EA5F37BE29E494C100D7DE04 /* PulaAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PulaAppApp.swift; sourceTree = "<group>"; };
 		EA5F37C029E494C100D7DE04 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -58,26 +60,60 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		EA59A04229E6E299008BF790 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
 		EA59A04329E6E325008BF790 /* Data */ = {
 			isa = PBXGroup;
 			children = (
+				EA59A04529E6E3D5008BF790 /* EventCategoryList.swift */,
+				EAA5560C29E4FEC6006B91E7 /* EventList.swift */,
 			);
 			path = Data;
 			sourceTree = "<group>";
 		};
-		EA59A04429E6E395008BF790 /* Atomos */ = {
+		EA59A04429E6E395008BF790 /* Atom */ = {
 			isa = PBXGroup;
 			children = (
+				EA59A04729E6E54B008BF790 /* IconSize.swift */,
+				EAA5560829E4DC11006B91E7 /* EventCategory.swift */,
 				EAA5560A29E4E2DB006B91E7 /* Event.swift */,
 			);
-			path = Atomos;
+			path = Atom;
+			sourceTree = "<group>";
+		};
+		EA59A04929E6E67F008BF790 /* Molecule */ = {
+			isa = PBXGroup;
+			children = (
+				73E7A04629E5D27F0019A979 /* DestaqueView.swift */,
+			);
+			path = Molecule;
+			sourceTree = "<group>";
+		};
+		EA59A04A29E6E731008BF790 /* Organism */ = {
+			isa = PBXGroup;
+			children = (
+				68A5809429E5D0EA00F74587 /* CategoryIconView.swift */,
+				73E7A04829E5D2E10019A979 /* DestaquesHStack.swift */,
+			);
+			path = Organism;
+			sourceTree = "<group>";
+		};
+		EA59A04B29E6E740008BF790 /* Template */ = {
+			isa = PBXGroup;
+			children = (
+				EA5F37C029E494C100D7DE04 /* ContentView.swift */,
+				EA59A04029E6E247008BF790 /* FavoritesView.swift */,
+				737F89D729E5EBE900AC1C19 /* MainView.swift */,
+				EA59A03C29E6A61C008BF790 /* MapView.swift */,
+			);
+			path = Template;
+			sourceTree = "<group>";
+		};
+		EA59A04E29E6E832008BF790 /* Pages */ = {
+			isa = PBXGroup;
+			children = (
+				73E7A04A29E5D4280019A979 /* FestivaisPage.swift */,
+				68A5809629E5D70900F74587 /* CategoryView.swift */,
+			);
+			path = Pages;
 			sourceTree = "<group>";
 		};
 		EA5F37B229E494C100D7DE04 = {
@@ -99,25 +135,16 @@
 		EA5F37BD29E494C100D7DE04 /* PulaApp */ = {
 			isa = PBXGroup;
 			children = (
-				EA59A04429E6E395008BF790 /* Atomos */,
+				EA59A04429E6E395008BF790 /* Atom */,
+				EA59A04929E6E67F008BF790 /* Molecule */,
+				EA59A04A29E6E731008BF790 /* Organism */,
+				EA59A04B29E6E740008BF790 /* Template */,
+				EA59A04E29E6E832008BF790 /* Pages */,
 				EA59A04329E6E325008BF790 /* Data */,
-				EA59A04229E6E299008BF790 /* Model */,
-				73E7A04829E5D2E10019A979 /* DestaquesHStack.swift */,
-				EA59A04529E6E3D5008BF790 /* EventCategoryList.swift */,
-				73E7A04A29E5D4280019A979 /* FestivaisPage.swift */,
-				73E7A04629E5D27F0019A979 /* DestaqueView.swift */,
-				EAA5560829E4DC11006B91E7 /* EventCategory.swift */,
-				EAA5560C29E4FEC6006B91E7 /* EventList.swift */,
-				68A5809429E5D0EA00F74587 /* CategoryIconView.swift */,
-				EA5F37BE29E494C100D7DE04 /* PulaAppApp.swift */,
-				68A5809629E5D70900F74587 /* CategoryView.swift */,
-				EA5F37C029E494C100D7DE04 /* ContentView.swift */,
-				EA59A04029E6E247008BF790 /* FavoritesView.swift */,
-				737F89D729E5EBE900AC1C19 /* MainView.swift */,
-				EA59A03C29E6A61C008BF790 /* MapView.swift */,
 				EA5F37C229E494C200D7DE04 /* Assets.xcassets */,
 				EA5F37C429E494C200D7DE04 /* Preview Content */,
-				EA59A04729E6E54B008BF790 /* IconSize.swift */,
+				EA59A04C29E6E7A8008BF790 /* MapIconsDemo.swift */,
+				EA5F37BE29E494C100D7DE04 /* PulaAppApp.swift */,
 			);
 			path = PulaApp;
 			sourceTree = "<group>";
@@ -212,6 +239,7 @@
 				73E7A04929E5D2E10019A979 /* DestaquesHStack.swift in Sources */,
 				EAA5560D29E4FEC6006B91E7 /* EventList.swift in Sources */,
 				73E7A04729E5D27F0019A979 /* DestaqueView.swift in Sources */,
+				EA59A04D29E6E7A8008BF790 /* MapIconsDemo.swift in Sources */,
 				EA59A04829E6E54B008BF790 /* IconSize.swift in Sources */,
 				EAA5560929E4DC11006B91E7 /* EventCategory.swift in Sources */,
 				68A5809529E5D0EA00F74587 /* CategoryIconView.swift in Sources */,

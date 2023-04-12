@@ -31,20 +31,7 @@ struct ContentView: View {
                     }
             }
             
-//            ForEach(EventList.events) { event in
-//                HStack {
-//                    Image(String(event.image))
-//                        .aspectRatio(contentMode: .fit)
-//                    VStack (alignment: .leading){
-//                        Text(event.date.formatted(.dateTime.day()) + "." + event.date.formatted(.dateTime.month(.twoDigits)))
-//                            .font(.body)
-//                            .bold()
-//                        Text(event.name)
-//                            .font(.body)
-//                    }
-//                }
-//            }
-            
+
             
             
             
