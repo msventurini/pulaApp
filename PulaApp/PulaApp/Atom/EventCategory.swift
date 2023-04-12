@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct Category: Hashable {
+struct EventCategory: Hashable {
     let name: String
     let imgName: String
 }

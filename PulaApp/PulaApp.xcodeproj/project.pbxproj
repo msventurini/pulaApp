@@ -17,7 +17,7 @@
 		EA59A04129E6E247008BF790 /* FavoritesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA59A04029E6E247008BF790 /* FavoritesView.swift */; };
 		EA59A04629E6E3D5008BF790 /* EventCategoryList.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA59A04529E6E3D5008BF790 /* EventCategoryList.swift */; };
 		EA59A04829E6E54B008BF790 /* IconSize.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA59A04729E6E54B008BF790 /* IconSize.swift */; };
-		EA59A04D29E6E7A8008BF790 /* MapIconsDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA59A04C29E6E7A8008BF790 /* MapIconsDemo.swift */; };
+		EA59A04D29E6E7A8008BF790 /* MapIconsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA59A04C29E6E7A8008BF790 /* MapIconsView.swift */; };
 		EA5F37BF29E494C100D7DE04 /* PulaAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA5F37BE29E494C100D7DE04 /* PulaAppApp.swift */; };
 		EA5F37C129E494C100D7DE04 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA5F37C029E494C100D7DE04 /* ContentView.swift */; };
 		EA5F37C329E494C200D7DE04 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EA5F37C229E494C200D7DE04 /* Assets.xcassets */; };
@@ -38,7 +38,7 @@
 		EA59A04029E6E247008BF790 /* FavoritesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesView.swift; sourceTree = "<group>"; };
 		EA59A04529E6E3D5008BF790 /* EventCategoryList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventCategoryList.swift; sourceTree = "<group>"; };
 		EA59A04729E6E54B008BF790 /* IconSize.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IconSize.swift; sourceTree = "<group>"; };
-		EA59A04C29E6E7A8008BF790 /* MapIconsDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapIconsDemo.swift; sourceTree = "<group>"; };
+		EA59A04C29E6E7A8008BF790 /* MapIconsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapIconsView.swift; sourceTree = "<group>"; };
 		EA5F37BB29E494C100D7DE04 /* PulaApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PulaApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EA5F37BE29E494C100D7DE04 /* PulaAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PulaAppApp.swift; sourceTree = "<group>"; };
 		EA5F37C029E494C100D7DE04 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -83,6 +83,8 @@
 			isa = PBXGroup;
 			children = (
 				73E7A04629E5D27F0019A979 /* DestaqueView.swift */,
+				EA59A04C29E6E7A8008BF790 /* MapIconsView.swift */,
+				68A5809429E5D0EA00F74587 /* CategoryIconView.swift */,
 			);
 			path = Molecule;
 			sourceTree = "<group>";
@@ -90,7 +92,6 @@
 		EA59A04A29E6E731008BF790 /* Organism */ = {
 			isa = PBXGroup;
 			children = (
-				68A5809429E5D0EA00F74587 /* CategoryIconView.swift */,
 				73E7A04829E5D2E10019A979 /* DestaquesHStack.swift */,
 			);
 			path = Organism;
@@ -143,7 +144,6 @@
 				EA59A04329E6E325008BF790 /* Data */,
 				EA5F37C229E494C200D7DE04 /* Assets.xcassets */,
 				EA5F37C429E494C200D7DE04 /* Preview Content */,
-				EA59A04C29E6E7A8008BF790 /* MapIconsDemo.swift */,
 				EA5F37BE29E494C100D7DE04 /* PulaAppApp.swift */,
 			);
 			path = PulaApp;
@@ -239,7 +239,7 @@
 				73E7A04929E5D2E10019A979 /* DestaquesHStack.swift in Sources */,
 				EAA5560D29E4FEC6006B91E7 /* EventList.swift in Sources */,
 				73E7A04729E5D27F0019A979 /* DestaqueView.swift in Sources */,
-				EA59A04D29E6E7A8008BF790 /* MapIconsDemo.swift in Sources */,
+				EA59A04D29E6E7A8008BF790 /* MapIconsView.swift in Sources */,
 				EA59A04829E6E54B008BF790 /* IconSize.swift in Sources */,
 				EAA5560929E4DC11006B91E7 /* EventCategory.swift in Sources */,
 				68A5809529E5D0EA00F74587 /* CategoryIconView.swift in Sources */,

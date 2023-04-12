@@ -7,7 +7,7 @@
 import SwiftUI
 
 struct CategoryIcon: View {
-    var category: Category
+    var category: EventCategory
     var size: IconSize
     
     var body: some View {

@@ -7,14 +7,14 @@
 
 import Foundation
 
-var categories: [Category] = [
-    Category(name: "BLOCOS", imgName: "blocos"),
-    Category(name: "CORTEJOS", imgName: "cortejos"),
-    Category(name: "DESFILES", imgName: "desfiles"),
-    Category(name: "SHOWS", imgName: "shows"),
-    Category(name: "BAILES", imgName: "bailes"),
-    Category(name: "FESTIVAIS", imgName: "festivais"),
-    Category(name: "TRIOS", imgName: "trios"),
-    Category(name: "ATIVIDADES", imgName: "atividades"),
-    Category(name: "EVENTOS", imgName: "eventos")
+var categories: [EventCategory] = [
+    EventCategory(name: "BLOCOS", imgName: "blocos"),
+    EventCategory(name: "CORTEJOS", imgName: "cortejos"),
+    EventCategory(name: "DESFILES", imgName: "desfiles"),
+    EventCategory(name: "SHOWS", imgName: "shows"),
+    EventCategory(name: "BAILES", imgName: "bailes"),
+    EventCategory(name: "FESTIVAIS", imgName: "festivais"),
+    EventCategory(name: "TRIOS", imgName: "trios"),
+    EventCategory(name: "ATIVIDADES", imgName: "atividades"),
+    EventCategory(name: "EVENTOS", imgName: "eventos")
 ]
