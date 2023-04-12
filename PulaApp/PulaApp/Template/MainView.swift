@@ -14,9 +14,20 @@ struct MainView: View {
         NavigationStack{
             ScrollView{
                 VStack(alignment: .leading){
-                    Text("Categorias")
-                        .font(.title2)
+                    
+                    HStack {
+                        Text("Categorias")
+                            .font(.title2)
                         .fontWeight(.semibold)
+                        Spacer()
+                        NavigationLink(destination: CategoryView()){
+                            Text("Ver Tudo")
+                                .foregroundColor(Color.blue)
+                                .padding(.trailing)
+                        }
+                        
+                    }
+                    
                     ScrollView(.horizontal){
                         HStack{
                             HStack(spacing: 16) {

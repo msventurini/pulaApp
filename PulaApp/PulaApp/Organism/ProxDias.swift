@@ -11,39 +11,48 @@ struct ProxDias: View {
     var eventList: [Event]
     
     var body: some View {
-        VStack(alignment: .leading){
-            Text("Nos Próximos Dias")
-                .font(.title2)
-                .fontWeight(.semibold)
+        NavigationStack{
+            VStack(alignment: .leading){
+                HStack {
+                    Text("Nos Próximos Dias")
+                        .font(.title2)
+                        .fontWeight(.semibold)
+                    Spacer()
+                    NavigationLink(destination: CategoryView()){
+                        Text("Ver Tudo")//mudar o destino aqui
+                            .foregroundColor(Color.blue)
+                            .padding(.trailing)
+                    }
+                }
                 .padding(.top)
-            
-            ScrollView(.horizontal){
-                HStack{
-                    ForEach(eventList){ event in
-                        ZStack(alignment: .bottomTrailing){
-                            Image(event.image)
-                                .resizable()
-                                .scaledToFit()
-                                .frame(height:185)
-                                .cornerRadius(8)
-                                .padding(.trailing)
-                            
-                            ZStack{
-                                Circle()
-                                    .colorInvert()
-                                    .frame(height: 30)
+                ScrollView(.horizontal){
+                    HStack{
+                        ForEach(eventList){ event in
+                            ZStack(alignment: .bottomTrailing){
+                                Image(event.image)
+                                    .resizable()
+                                    .scaledToFit()
+                                    .frame(height:185)
+                                    .cornerRadius(8)
+                                    .padding(.trailing)
                                 
-                                if event.isSaved {
-                                    Image(systemName: "bookmark.fill")
-                                        .foregroundColor(Color.blue)
+                                ZStack{
+                                    Circle()
+                                        .colorInvert()
+                                        .frame(height: 30)
                                     
-                                } else {
-                                    Image(systemName: "bookmark")
-                                        .foregroundColor(Color.blue)
+                                    if event.isSaved {
+                                        Image(systemName: "bookmark.fill")
+                                            .foregroundColor(Color.blue)
+                                        
+                                    } else {
+                                        Image(systemName: "bookmark")
+                                            .foregroundColor(Color.blue)
+                                    }
                                 }
+                                .padding(.bottom, 4.0)
+                                .padding(.trailing, 21)
                             }
-                            .padding(.bottom, 4.0)
-                            .padding(.trailing, 21)
                         }
                     }
                 }
