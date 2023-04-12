@@ -1,5 +1,5 @@
 //
-//  SavedView.swift
+//  FavoritesView.swift
 //  PulaApp
 //
 //  Created by Matheus Silveira Venturini on 12/04/23.
@@ -7,14 +7,14 @@
 
 import SwiftUI
 
-struct SavedView: View {
+struct FavoritesView: View {
     var body: some View {
-        Text("Salvos")
+        Text("Itens salvos")
     }
 }
 
-struct SavedView_Previews: PreviewProvider {
+struct FavoritesView_Previews: PreviewProvider {
     static var previews: some View {
-        SavedView()
+        FavoritesView()
     }
 }

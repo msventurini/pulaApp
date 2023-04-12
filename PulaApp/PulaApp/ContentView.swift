@@ -17,7 +17,8 @@ struct ContentView: View {
                         Image(systemName: "calendar")
                         Text("Principal")
                     }
-                SavedView()
+                
+                FavoritesView()
                     .tabItem {
                         //pq esse bookmark não está vazado?
                         Image(systemName: "bookmark")
