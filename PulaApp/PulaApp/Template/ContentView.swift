@@ -9,7 +9,7 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        VStack {
+//        VStack {
             
             TabView{
                 MainView()
@@ -23,6 +23,7 @@ struct ContentView: View {
                         //pq esse bookmark não está vazado?
                         Image(systemName: "bookmark")
                         Text("Salvos")
+                            .bold()
                     }
                 MapView()
                     .tabItem {
@@ -35,8 +36,7 @@ struct ContentView: View {
             
             
             
-        }
-        .padding()
+        //}
     }
 }
 
