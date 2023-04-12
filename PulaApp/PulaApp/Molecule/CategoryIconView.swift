@@ -6,9 +6,9 @@
 //
 import SwiftUI
 
-struct Category: View {
-    var category: Categoria
-    var size: Size
+struct CategoryIcon: View {
+    var category: EventCategory
+    var size: IconSize
     
     var body: some View {
         VStack {
@@ -22,7 +22,7 @@ struct Category: View {
         }
     }
     
-    func printImage(_ size: Size) -> CGFloat {
+    func printImage(_ size: IconSize) -> CGFloat {
         var number: CGFloat = 0
         
         if size == .large {
@@ -34,8 +34,8 @@ struct Category: View {
     }
 }
 
-struct Category_Previews: PreviewProvider {
+struct CategoryIcon_Previews: PreviewProvider {
     static var previews: some View {
-        Category(category: images[0], size: .large)
+        CategoryIcon(category: categories[0], size: .large)
     }
 }

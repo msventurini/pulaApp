@@ -13,7 +13,21 @@ struct MainView: View {
         
     NavigationStack{
         ScrollView{
-            Text("BH")
+            HStack {
+                Text("Categorias")
+                Spacer()
+                
+                NavigationLink {
+                    CategoryView()
+                } label: {
+                    Text("Tap me")
+                }
+                
+                
+
+                .foregroundColor(.blue)
+                
+            }
             
             
             

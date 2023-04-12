@@ -13,19 +13,19 @@ struct CategoryView: View {
             VStack(spacing: 58.22) {
                 HStack(spacing: 16) {
                     ForEach(0...2, id:\.self) {
-                        Category(category: images[$0], size: .large)
+                        CategoryIcon(category: categories[$0], size: .large)
                     }
                 }
                 
                 HStack(spacing: 16) {
                     ForEach(3...5, id:\.self) {
-                        Category(category: images[$0], size: .large)
+                        CategoryIcon(category: categories[$0], size: .large)
                     }
                 }
                 
                 HStack(spacing: 16){
                     ForEach(6...8, id:\.self) {
-                        Category(category: images[$0], size: .large)
+                        CategoryIcon(category: categories[$0], size: .large)
                     }
                 }
             }
