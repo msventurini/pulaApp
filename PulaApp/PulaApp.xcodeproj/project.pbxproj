@@ -78,16 +78,16 @@
 				73E7A04629E5D27F0019A979 /* DestaqueView.swift */,
 				EAA5560829E4DC11006B91E7 /* EventCategory.swift */,
 				68A5809429E5D0EA00F74587 /* Category.swift */,
-				68A5809629E5D70900F74587 /* CategoryView.swift */,
 				EA5F37BE29E494C100D7DE04 /* PulaAppApp.swift */,
-				EA5F37C029E494C100D7DE04 /* ContentView.swift */,
 				EAA5560A29E4E2DB006B91E7 /* Event.swift */,
+				68A5809629E5D70900F74587 /* CategoryView.swift */,
 				EAA5560C29E4FEC6006B91E7 /* EventList.swift */,
 				EA5F37C229E494C200D7DE04 /* Assets.xcassets */,
 				EA5F37C429E494C200D7DE04 /* Preview Content */,
 				737F89D729E5EBE900AC1C19 /* MainView.swift */,
 				EA59A03E29E6A63B008BF790 /* SavedView.swift */,
 				EA59A03C29E6A61C008BF790 /* MapView.swift */,
+				EA5F37C029E494C100D7DE04 /* ContentView.swift */,
 			);
 			path = PulaApp;
 			sourceTree = "<group>";
