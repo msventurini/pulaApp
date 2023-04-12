@@ -11,6 +11,12 @@
 		1426306929E5DD1E00EDA95A /* onboardingContent2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1426306829E5DD1E00EDA95A /* onboardingContent2.swift */; };
 		1426306B29E5E2B700EDA95A /* onboardingContent3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1426306A29E5E2B700EDA95A /* onboardingContent3.swift */; };
 		1426306D29E5EE5000EDA95A /* onboardingCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1426306C29E5EE5000EDA95A /* onboardingCard.swift */; };
+		68A5809529E5D0EA00F74587 /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68A5809429E5D0EA00F74587 /* Category.swift */; };
+		68A5809729E5D70900F74587 /* CategoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68A5809629E5D70900F74587 /* CategoryView.swift */; };
+		737F89D829E5EBE900AC1C19 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 737F89D729E5EBE900AC1C19 /* MainView.swift */; };
+		73E7A04729E5D27F0019A979 /* DestaqueView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73E7A04629E5D27F0019A979 /* DestaqueView.swift */; };
+		73E7A04929E5D2E10019A979 /* DestaquesHStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73E7A04829E5D2E10019A979 /* DestaquesHStack.swift */; };
+		73E7A04B29E5D4280019A979 /* FestivaisPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73E7A04A29E5D4280019A979 /* FestivaisPage.swift */; };
 		EA5F37BF29E494C100D7DE04 /* PulaAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA5F37BE29E494C100D7DE04 /* PulaAppApp.swift */; };
 		EA5F37C129E494C100D7DE04 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA5F37C029E494C100D7DE04 /* ContentView.swift */; };
 		EA5F37C329E494C200D7DE04 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EA5F37C229E494C200D7DE04 /* Assets.xcassets */; };
@@ -25,6 +31,12 @@
 		1426306829E5DD1E00EDA95A /* onboardingContent2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = onboardingContent2.swift; sourceTree = "<group>"; };
 		1426306A29E5E2B700EDA95A /* onboardingContent3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = onboardingContent3.swift; sourceTree = "<group>"; };
 		1426306C29E5EE5000EDA95A /* onboardingCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = onboardingCard.swift; sourceTree = "<group>"; };
+		68A5809429E5D0EA00F74587 /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
+		68A5809629E5D70900F74587 /* CategoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryView.swift; sourceTree = "<group>"; };
+		737F89D729E5EBE900AC1C19 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		73E7A04629E5D27F0019A979 /* DestaqueView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DestaqueView.swift; sourceTree = "<group>"; };
+		73E7A04829E5D2E10019A979 /* DestaquesHStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DestaquesHStack.swift; sourceTree = "<group>"; };
+		73E7A04A29E5D4280019A979 /* FestivaisPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FestivaisPage.swift; sourceTree = "<group>"; };
 		EA5F37BB29E494C100D7DE04 /* PulaApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PulaApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EA5F37BE29E494C100D7DE04 /* PulaAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PulaAppApp.swift; sourceTree = "<group>"; };
 		EA5F37C029E494C100D7DE04 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -65,7 +77,13 @@
 		EA5F37BD29E494C100D7DE04 /* PulaApp */ = {
 			isa = PBXGroup;
 			children = (
+				737F89D729E5EBE900AC1C19 /* MainView.swift */,
+				73E7A04829E5D2E10019A979 /* DestaquesHStack.swift */,
+				73E7A04A29E5D4280019A979 /* FestivaisPage.swift */,
+				73E7A04629E5D27F0019A979 /* DestaqueView.swift */,
 				EAA5560829E4DC11006B91E7 /* EventCategory.swift */,
+				68A5809429E5D0EA00F74587 /* Category.swift */,
+				68A5809629E5D70900F74587 /* CategoryView.swift */,
 				EA5F37BE29E494C100D7DE04 /* PulaAppApp.swift */,
 				EA5F37C029E494C100D7DE04 /* ContentView.swift */,
 				1426306429E5D8CB00EDA95A /* onboardingContent.swift */,
@@ -163,10 +181,17 @@
 				1426306929E5DD1E00EDA95A /* onboardingContent2.swift in Sources */,
 				EA5F37C129E494C100D7DE04 /* ContentView.swift in Sources */,
 				1426306B29E5E2B700EDA95A /* onboardingContent3.swift in Sources */,
+				737F89D829E5EBE900AC1C19 /* MainView.swift in Sources */,
+				68A5809729E5D70900F74587 /* CategoryView.swift in Sources */,
+				EA5F37C129E494C100D7DE04 /* ContentView.swift in Sources */,
+				73E7A04B29E5D4280019A979 /* FestivaisPage.swift in Sources */,
 				EA5F37BF29E494C100D7DE04 /* PulaAppApp.swift in Sources */,
+				73E7A04929E5D2E10019A979 /* DestaquesHStack.swift in Sources */,
 				EAA5560D29E4FEC6006B91E7 /* EventList.swift in Sources */,
 				1426306D29E5EE5000EDA95A /* onboardingCard.swift in Sources */,
+				73E7A04729E5D27F0019A979 /* DestaqueView.swift in Sources */,
 				EAA5560929E4DC11006B91E7 /* EventCategory.swift in Sources */,
+				68A5809529E5D0EA00F74587 /* Category.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
