@@ -11,14 +11,18 @@ struct CategoryIcon: View {
     var size: IconSize
     
     var body: some View {
-        VStack {
-            Image(category.imgName)
-                .resizable()
-                .scaledToFit()
-                .frame(width: printImage(size))
-            
-            Text(category.name)
-                .font(.subheadline)
+        NavigationStack {
+            VStack {
+                NavigationLink(destination: FestivaisPage(title: category.name)) {
+                    Image(category.imgName)
+                        .resizable()
+                        .scaledToFit()
+                    .frame(width: printImage(size))
+                }
+                
+                Text(category.name.uppercased())
+                    .font(.subheadline)
+            }
         }
     }
     

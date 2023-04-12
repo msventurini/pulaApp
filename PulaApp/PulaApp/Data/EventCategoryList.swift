@@ -8,13 +8,13 @@
 import Foundation
 
 var categories: [EventCategory] = [
-    EventCategory(name: "BLOCOS", imgName: "blocos"),
-    EventCategory(name: "CORTEJOS", imgName: "cortejos"),
-    EventCategory(name: "DESFILES", imgName: "desfiles"),
-    EventCategory(name: "SHOWS", imgName: "shows"),
-    EventCategory(name: "BAILES", imgName: "bailes"),
-    EventCategory(name: "FESTIVAIS", imgName: "festivais"),
-    EventCategory(name: "TRIOS", imgName: "trios"),
-    EventCategory(name: "ATIVIDADES", imgName: "atividades"),
-    EventCategory(name: "EVENTOS", imgName: "eventos")
+    EventCategory(name: "Blocos", imgName: "blocos"),
+    EventCategory(name: "Cortejos", imgName: "cortejos"),
+    EventCategory(name: "Desfiles", imgName: "desfiles"),
+    EventCategory(name: "Shows", imgName: "shows"),
+    EventCategory(name: "Bailes", imgName: "bailes"),
+    EventCategory(name: "Festivais", imgName: "festivais"),
+    EventCategory(name: "Trios", imgName: "trios"),
+    EventCategory(name: "Atividades", imgName: "atividades"),
+    EventCategory(name: "Eventos", imgName: "eventos")
 ]

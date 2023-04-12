@@ -8,6 +8,8 @@
 import SwiftUI
 
 struct FestivaisPage: View {
+    var title: String
+    
     var body: some View {
         NavigationStack {
             ScrollView{
@@ -22,12 +24,13 @@ struct FestivaisPage: View {
                 }
                 .padding(.leading)
             }
+            .navigationTitle(title)
         }
     }
 }
 
 struct FestivaisPage_Previews: PreviewProvider {
     static var previews: some View {
-        FestivaisPage()
+        FestivaisPage(title: "Festivais")
     }
 }
