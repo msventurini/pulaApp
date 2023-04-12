@@ -1,13 +1,13 @@
 //
-//  DestaqueView.swift
+//  SavedEvent.swift
 //  PulaApp
 //
-//  Created by Felippo Stedile on 11/04/23.
+//  Created by Felippo Stedile on 12/04/23.
 //
 
 import SwiftUI
 
-struct destaqueView: View {
+struct SavedEvent: View {
     var event: Event
     
     var body: some View {
@@ -61,8 +61,8 @@ struct destaqueView: View {
     }
 }
 
-struct destaqueView_Previews: PreviewProvider {
+struct SavedEvent_Previews: PreviewProvider {
     static var previews: some View {
-        destaqueView(event: EventList.events[0])
+        SavedEvent(event: EventList.events[1])
     }
 }
