@@ -17,7 +17,8 @@ struct CategoryIcon: View {
                     Image(category.imgName)
                         .resizable()
                         .scaledToFit()
-                    .frame(width: printImage(size))
+                        .clipShape(Circle())
+                        .frame(width: printImage(size))
                 }
                 
                 Text(category.name.uppercased())
