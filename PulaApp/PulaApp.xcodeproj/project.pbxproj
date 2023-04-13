@@ -27,6 +27,7 @@
 		EA5F37C129E494C100D7DE04 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA5F37C029E494C100D7DE04 /* ContentView.swift */; };
 		EA5F37C329E494C200D7DE04 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EA5F37C229E494C200D7DE04 /* Assets.xcassets */; };
 		EA5F37C629E494C200D7DE04 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EA5F37C529E494C200D7DE04 /* Preview Assets.xcassets */; };
+		EA667D8429E8624000013E41 /* LocalInformationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA667D8329E8624000013E41 /* LocalInformationView.swift */; };
 		EA73592729E720DF00004B9E /* CategoryIconView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA73592529E720DF00004B9E /* CategoryIconView.swift */; };
 		EA73592829E720DF00004B9E /* DestaqueView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA73592629E720DF00004B9E /* DestaqueView.swift */; };
 		EAA5560929E4DC11006B91E7 /* EventCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAA5560829E4DC11006B91E7 /* EventCategory.swift */; };
@@ -56,6 +57,7 @@
 		EA5F37C029E494C100D7DE04 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		EA5F37C229E494C200D7DE04 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EA5F37C529E494C200D7DE04 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		EA667D8329E8624000013E41 /* LocalInformationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalInformationView.swift; sourceTree = "<group>"; };
 		EA73592529E720DF00004B9E /* CategoryIconView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoryIconView.swift; sourceTree = "<group>"; };
 		EA73592629E720DF00004B9E /* DestaqueView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DestaqueView.swift; sourceTree = "<group>"; };
 		EAA5560829E4DC11006B91E7 /* EventCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventCategory.swift; sourceTree = "<group>"; };
@@ -110,6 +112,7 @@
 			children = (
 				73E7A04829E5D2E10019A979 /* DestaquesHStack.swift */,
 				73A0D00B29E737620046D87A /* ProxDias.swift */,
+				EA667D8329E8624000013E41 /* LocalInformationView.swift */,
 			);
 			path = Organism;
 			sourceTree = "<group>";
@@ -270,6 +273,7 @@
 				1426306D29E5EE5000EDA95A /* onboardingCard.swift in Sources */,
 				73A0D00A29E72E400046D87A /* SaveButton.swift in Sources */,
 				EA59A04D29E6E7A8008BF790 /* MapIconsView.swift in Sources */,
+				EA667D8429E8624000013E41 /* LocalInformationView.swift in Sources */,
 				EA59A04829E6E54B008BF790 /* IconSize.swift in Sources */,
 				EAA5560929E4DC11006B91E7 /* EventCategory.swift in Sources */,
 			);

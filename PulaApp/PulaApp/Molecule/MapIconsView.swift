@@ -16,7 +16,11 @@ struct MapIcon: View {
         
         HStack {
             Image(String(event.image))
-                .aspectRatio(contentMode: .fit)
+                .resizable()
+                .aspectRatio(contentMode: .fill)
+                .frame(width: 54, height: 48)
+                .cornerRadius(4)
+                
             VStack (alignment: .leading){
                 Text(event.date.formatted(.dateTime.day()) + "." + event.date.formatted(.dateTime.month(.twoDigits)))
                     .font(.body)
@@ -25,6 +29,7 @@ struct MapIcon: View {
                     .font(.body)
             }
         }
+        .frame(width: 130, height: 48)
         
         
         
