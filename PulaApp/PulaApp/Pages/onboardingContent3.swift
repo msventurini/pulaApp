@@ -10,6 +10,7 @@ import SwiftUI
 struct onboardingContent3: View {
     var body: some View {
         VStack{
+            Spacer()
             //title
 
             Text("Melhorar sua experiência")
@@ -18,7 +19,7 @@ struct onboardingContent3: View {
                 .multilineTextAlignment(.center)
             
             //subtitle
-            Text("Here’s a title that can be used and can span multiple lines.Here’s a title that can be used and can span multiple lines.Here’s a title that can be used and can span multiple lines.Here’s a title that can be used and can span multiple lines.")
+            Text("Para que sua experiência seja completa compartilhe sua localização e ative as notificações.")
                 .font(.body)
                 .multilineTextAlignment(.center)
                 .padding(.top, 1.0)
@@ -29,6 +30,9 @@ struct onboardingContent3: View {
                 .fontWeight(.semibold)
                 .foregroundColor(Color.blue)
                 .padding(.top, 1.0)
+            Spacer()
+            Spacer()
+
         }
         .padding(.all, 5.0)
     }
