@@ -13,6 +13,9 @@
 		1426306D29E5EE5000EDA95A /* onboardingCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1426306C29E5EE5000EDA95A /* onboardingCard.swift */; };
 		68A5809729E5D70900F74587 /* CategoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68A5809629E5D70900F74587 /* CategoryView.swift */; };
 		737F89D829E5EBE900AC1C19 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 737F89D729E5EBE900AC1C19 /* MainView.swift */; };
+		73A0D00A29E72E400046D87A /* SaveButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73A0D00929E72E400046D87A /* SaveButton.swift */; };
+		73A0D00C29E737620046D87A /* ProxDias.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73A0D00B29E737620046D87A /* ProxDias.swift */; };
+		73B7536229E7442500C72FFC /* SavedEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73B7536129E7442500C72FFC /* SavedEvent.swift */; };
 		73E7A04929E5D2E10019A979 /* DestaquesHStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73E7A04829E5D2E10019A979 /* DestaquesHStack.swift */; };
 		73E7A04B29E5D4280019A979 /* FestivaisPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73E7A04A29E5D4280019A979 /* FestivaisPage.swift */; };
 		EA59A03D29E6A61C008BF790 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA59A03C29E6A61C008BF790 /* MapView.swift */; };
@@ -38,6 +41,9 @@
 		1426306C29E5EE5000EDA95A /* onboardingCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = onboardingCard.swift; sourceTree = "<group>"; };
 		68A5809629E5D70900F74587 /* CategoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryView.swift; sourceTree = "<group>"; };
 		737F89D729E5EBE900AC1C19 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		73A0D00929E72E400046D87A /* SaveButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SaveButton.swift; sourceTree = "<group>"; };
+		73A0D00B29E737620046D87A /* ProxDias.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProxDias.swift; sourceTree = "<group>"; };
+		73B7536129E7442500C72FFC /* SavedEvent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavedEvent.swift; sourceTree = "<group>"; };
 		73E7A04829E5D2E10019A979 /* DestaquesHStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DestaquesHStack.swift; sourceTree = "<group>"; };
 		73E7A04A29E5D4280019A979 /* FestivaisPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FestivaisPage.swift; sourceTree = "<group>"; };
 		EA59A03C29E6A61C008BF790 /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
@@ -83,6 +89,7 @@
 				EAA5560A29E4E2DB006B91E7 /* Event.swift */,
 				EA59A04729E6E54B008BF790 /* IconSize.swift */,
 				EAA5560829E4DC11006B91E7 /* EventCategory.swift */,
+				73A0D00929E72E400046D87A /* SaveButton.swift */,
 			);
 			path = Atom;
 			sourceTree = "<group>";
@@ -90,6 +97,7 @@
 		EA59A04929E6E67F008BF790 /* Molecule */ = {
 			isa = PBXGroup;
 			children = (
+				73B7536129E7442500C72FFC /* SavedEvent.swift */,
 				EA73592529E720DF00004B9E /* CategoryIconView.swift */,
 				EA73592629E720DF00004B9E /* DestaqueView.swift */,
 				EA59A04C29E6E7A8008BF790 /* MapIconsView.swift */,
@@ -101,6 +109,7 @@
 			isa = PBXGroup;
 			children = (
 				73E7A04829E5D2E10019A979 /* DestaquesHStack.swift */,
+				73A0D00B29E737620046D87A /* ProxDias.swift */,
 			);
 			path = Organism;
 			sourceTree = "<group>";
@@ -244,6 +253,7 @@
 				EA59A03D29E6A61C008BF790 /* MapView.swift in Sources */,
 				EA73592729E720DF00004B9E /* CategoryIconView.swift in Sources */,
 				EA59A04129E6E247008BF790 /* FavoritesView.swift in Sources */,
+				73A0D00C29E737620046D87A /* ProxDias.swift in Sources */,
 				1426306929E5DD1E00EDA95A /* onboardingContent2.swift in Sources */,
 				EA73592829E720DF00004B9E /* DestaqueView.swift in Sources */,
 				EA5F37C129E494C100D7DE04 /* ContentView.swift in Sources */,
@@ -254,9 +264,11 @@
 				73E7A04B29E5D4280019A979 /* FestivaisPage.swift in Sources */,
 				EA5F37BF29E494C100D7DE04 /* PulaAppApp.swift in Sources */,
 				EA59A04629E6E3D5008BF790 /* EventCategoryList.swift in Sources */,
+				73B7536229E7442500C72FFC /* SavedEvent.swift in Sources */,
 				73E7A04929E5D2E10019A979 /* DestaquesHStack.swift in Sources */,
 				EAA5560D29E4FEC6006B91E7 /* EventList.swift in Sources */,
 				1426306D29E5EE5000EDA95A /* onboardingCard.swift in Sources */,
+				73A0D00A29E72E400046D87A /* SaveButton.swift in Sources */,
 				EA59A04D29E6E7A8008BF790 /* MapIconsView.swift in Sources */,
 				EA59A04829E6E54B008BF790 /* IconSize.swift in Sources */,
 				EAA5560929E4DC11006B91E7 /* EventCategory.swift in Sources */,

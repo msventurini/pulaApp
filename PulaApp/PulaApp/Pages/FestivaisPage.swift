@@ -12,8 +12,8 @@ struct FestivaisPage: View {
     
     var body: some View {
         NavigationStack {
-            ScrollView {
-                VStack {
+            ScrollView{
+                VStack{
                     DestaquesHStack(eventList: EventList.events, eventsType: "Destaques")
                         .padding(.vertical)
                     

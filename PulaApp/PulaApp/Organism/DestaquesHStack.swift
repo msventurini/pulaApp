@@ -13,32 +13,30 @@ struct DestaquesHStack: View {
     var eventsType: String
     
     var body: some View {
-        VStack(alignment: .leading){
-            //HStack{
-                Text(eventsType)
-                    .font(.title2)
+        NavigationStack {
+            VStack(alignment: .leading){
+                HStack {
+                    Text(eventsType)
+                        .font(.title2)
                     .fontWeight(.semibold)
-                    .padding(.bottom)
-                //Spacer()
-                //Button("Ver Tudo"){
                     
-                //}
-                //.foregroundColor(Color(.systemBlue))
-                //.padding(.trailing)
-            //}
-            
-            ScrollView(.horizontal){
-                HStack{
-                    ForEach(eventList){ event in
-                        var date: String = event.date.formatted(.dateTime.day()) + "." + event.date.formatted(.dateTime.month(.twoDigits)) + " | " + event.date.formatted(.dateTime.hour())
-                        
-                        
-                        
-                        destaqueView(eventName: event.name, imageName: event.image, date: date, location: event.location)
+                    Spacer()
+                    NavigationLink(destination: CategoryView()){
+                        Text("Ver Tudo")//mudar esse destino aqui
+                            .foregroundColor(Color.blue)
+                            .padding(.trailing)
+                    }
+                }
+                
+                ScrollView(.horizontal){
+                    HStack{
+                        ForEach(eventList){ event in
+                            //var date: String = event.date.formatted(.dateTime.day()) + "." + event.date.formatted(.dateTime.month(.twoDigits)) + " | " + event.date.formatted(.dateTime.hour())
+                            destaqueView(event: event)
+                        }
                     }
                 }
             }
-            //.padding()
         }
     }
 }
@@ -46,6 +44,6 @@ struct DestaquesHStack: View {
 
 struct DestaquesHStack_Previews: PreviewProvider {
     static var previews: some View {
-        DestaquesHStack(eventList: EventList.events, eventsType: "Destaques")
+        DestaquesHStack(eventList: EventList.events , eventsType: "Destaques")
     }
 }
