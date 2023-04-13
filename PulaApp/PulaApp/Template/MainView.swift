@@ -38,7 +38,7 @@ struct MainView: View {
                         }
                     }
                     
-                    ProxDias(eventList: EventList.events)
+                    ProxDiasHStack(eventList: EventList.events)
                     
                     DestaquesHStack(eventList: EventList.events, eventsType: "Destaques")
                         .padding(.top)
