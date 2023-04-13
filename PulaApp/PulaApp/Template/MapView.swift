@@ -15,23 +15,23 @@ struct MapView: View {
                     .resizable()
                     .aspectRatio(contentMode: .fit)
                                 
-                LocalInformationView(event: EventList.events[0], height: geometry.size.height)
+                LocalInformationView(event: EventList.events[0], width: geometry.size.width, height: geometry.size.height)
                     .position(
                         x: geometry.size.width * 0.6,
                         y: geometry.size.height * 0.1
                     )
                 
-                LocalInformationView(event: EventList.events[0], height: geometry.size.height)
+                LocalInformationView(event: EventList.events[0], width: geometry.size.width, height: geometry.size.height)
                     .position(
                         x: geometry.size.width * 0.3,
                         y: geometry.size.height * 0.25)
                 
-                LocalInformationView(event: EventList.events[0], height: geometry.size.height)
+                LocalInformationView(event: EventList.events[0], width: geometry.size.width, height: geometry.size.height)
                     .position(
                         x: geometry.size.width * 0.75,
                         y: geometry.size.height * 0.4)
                 
-                LocalInformationView(event: EventList.events[0], height: geometry.size.height)
+                LocalInformationView(event: EventList.events[0], width: geometry.size.width, height: geometry.size.height)
                     .position(
                         x: geometry.size.width * 0.25,
                         y: geometry.size.height * 0.5)

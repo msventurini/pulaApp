@@ -10,8 +10,9 @@ import SwiftUI
 struct LocalInformationView: View {
     
     var event: Event
+    var width: Double
     var height: Double
-    
+
     var body: some View {
         ZStack {
             ZStack {
@@ -28,7 +29,7 @@ struct LocalInformationView: View {
                     .offset(y:30)
                     .colorInvert()
             }
-            MapIcon(event: event)
+            MapIcon(event: event,widht: width, height: height)
 
         }
         
@@ -37,6 +38,6 @@ struct LocalInformationView: View {
 
 struct LocalInformationView_Previews: PreviewProvider {
     static var previews: some View {
-        LocalInformationView(event: EventList.events[0], height: 842.59)
+        LocalInformationView(event: EventList.events[0], width: 393, height: 842.59)
     }
 }
