@@ -11,9 +11,12 @@ struct onboardingCard: View {
     var body: some View {
         VStack {
             Spacer()
+            
+            
             VStack {
+                                
                 TabView{
-                    onboardingContent()
+                    onboardingContent1()
                     onboardingContent2()
                     onboardingContent3()
                 }

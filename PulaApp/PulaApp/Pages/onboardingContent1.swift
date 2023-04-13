@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct onboardingContent: View {
+struct onboardingContent1: View {
     var body: some View {
         // Onboarding content 1
         VStack {
@@ -15,9 +15,7 @@ struct onboardingContent: View {
                 .font(.largeTitle)
                 .fontWeight(.semibold)
                 .multilineTextAlignment(.center)
-            Text("Here’s a title that can be used and can span multiple lines.")
-                .multilineTextAlignment(.center)
-                .padding(.top)
+
             Image("memoji")
                 .resizable()
                 .aspectRatio(contentMode: .fit)
@@ -26,8 +24,8 @@ struct onboardingContent: View {
     }
 }
 
-struct onboardingContent_Previews: PreviewProvider {
+struct onboardingContent1_Previews: PreviewProvider {
     static var previews: some View {
-        onboardingContent()
+        onboardingContent1()
     }
 }
