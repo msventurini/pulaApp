@@ -28,7 +28,7 @@ struct DestaquesHStack: View {
                     }
                 }
                 
-                ScrollView(.horizontal){
+                ScrollView(.horizontal, showsIndicators: false){
                     HStack{
                         ForEach(eventList){ event in
                             destaqueView(event: event)
