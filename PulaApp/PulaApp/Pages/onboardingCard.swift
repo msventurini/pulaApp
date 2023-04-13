@@ -8,47 +8,59 @@
 import SwiftUI
 
 struct onboardingCard: View {
+    @State var page = 0
     var body: some View {
-        VStack {
-            Spacer()
-            
-            
+        NavigationStack {
             VStack {
-                                
-                TabView{
-                    onboardingContent1()
-                    onboardingContent2()
-                    onboardingContent3()
-                }
-                .tabViewStyle(.page) //paginação
-                .indexViewStyle(.page(backgroundDisplayMode: .always)) // cor da paginação
+                Spacer()
+                
+                VStack {
+                    TabView(selection: $page){
+                        onboardingContent1()
+                            .tag(0)
+                        onboardingContent2()
+                            .tag(1)
+                        onboardingContent3()
+                            .tag(2)
+                    }
+                    .tabViewStyle(.page) //paginação
+                    .indexViewStyle(.page(backgroundDisplayMode: .always)) // cor da paginação
 
-                
-                //btn next
-                Button(action: {
+                    //btn next
+                    if page < 2 {
+                        Button(action: {
+                            page += 1
+                        }, label: {
+                            Text("Próximo")
+                                .font(.body)
+                                .fontWeight(.semibold)
+                                .padding(.all, 16.0)
+                                .background(Color(uiColor: UIColor.systemGray5))
+                                .cornerRadius(10)
+                                .foregroundColor(.black)
+                        })
+                    } else {
+                        NavigationLink(destination: ContentView()) {
+                            Text("Próximo")
+                                .font(.body)
+                                .fontWeight(.semibold)
+                                .padding(.all, 16.0)
+                                .background(Color(uiColor: UIColor.systemGray5))
+                                .cornerRadius(10)
+                                .foregroundColor(.black)
+                        }
+                    }
                     
-                }, label: {
-                    Text("Próximo")
-                        .font(.body)
-                        .fontWeight(.semibold)
-                        .padding(.all, 16.0)
-                        .background(Color(uiColor: UIColor.systemGray5))
-                        .cornerRadius(10)
-                        .foregroundColor(.black)
-                })
-                
-                
-                //btn skip
-                Button(action: {
-                    
-                }, label: {
-                    Text("Pular")
-                        .font(.body)
-                        .padding(.vertical)
-                        .foregroundColor(.blue)
-                })
+                    //btn skip
+                    NavigationLink(destination: ContentView()) {
+                        Text("Pular")
+                            .font(.body)
+                            .padding(.vertical)
+                            .foregroundColor(.blue)
+                    }
+                }
+                //.background(.red)
             }
-            //.background(.red)
         }
     }
 }
