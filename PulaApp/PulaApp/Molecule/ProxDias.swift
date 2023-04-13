@@ -11,24 +11,31 @@ struct ProxDias: View {
     @StateObject var event: Event
     
     var body: some View {
-        ZStack(alignment: .bottomTrailing){
-            Image(event.image)
-                .resizable()
-                .scaledToFit()
-                .frame(height:185)
-                .cornerRadius(8)
-                .padding(.trailing)
-            
-            ZStack{
-                Circle()
-                    .colorInvert()
-                    .frame(height: 30)
+        NavigationStack {
+            ZStack(alignment: .bottomTrailing){
                 
-                SaveButton(isSet: $event.isSaved)
+                NavigationLink(destination: DetailView(event: event)){
+                    Image(event.image)
+                        .resizable()
+                        .scaledToFit()
+                        .frame(height:185)
+                        .cornerRadius(8)
+                        .padding(.trailing)
+                    
+                }
+                
+                ZStack{
+                    Circle()
+                        .colorInvert()
+                        .frame(height: 30)
+                    
+                    SaveButton(isSet: $event.isSaved)
+                }
+                .padding(.bottom, 4.0)
+                .padding(.trailing, 21)
             }
-            .padding(.bottom, 4.0)
-            .padding(.trailing, 21)
         }
+        
     }
 }
 
