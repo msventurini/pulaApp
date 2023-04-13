@@ -18,7 +18,7 @@ struct ContentView: View {
                         Text("Principal")
                     }
                 
-                FavoritesView()
+                FavoritesView(events: EventList.events)
                     .tabItem {
                         //pq esse bookmark não está vazado?
                         Image(systemName: "bookmark")

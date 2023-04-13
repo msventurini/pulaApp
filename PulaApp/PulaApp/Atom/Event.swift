@@ -7,14 +7,14 @@
 
 import Foundation
 
-struct Event: Identifiable {
+class Event: ObservableObject, Identifiable {
     let id: Int
     let name: String
     let date: Date
     let description: String
     let location: String //podemos usar o mapkit posteriormente pra colocar uma informação mais relevante sobre isso!
     let image: String
-    var isSaved: Bool
+    @Published var isSaved: Bool
     
     init(id: Int, name: String, date: Date, description: String, location: String, image: String, isSaved: Bool) {
         self.id = id

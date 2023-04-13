@@ -1,37 +1,34 @@
 //
-//  DestaquesHStack.swift
+//  ProxDias.swift
 //  PulaApp
 //
-//  Created by Felippo Stedile on 11/04/23.
+//  Created by Felippo Stedile on 12/04/23.
 //
 
 import SwiftUI
 
-struct DestaquesHStack: View {
-    
-    var eventList: [Event]
-    var eventsType: String
+struct ProxDiasHStack: View {
+    @State var eventList: [Event]
     
     var body: some View {
-        NavigationStack {
+        NavigationStack{
             VStack(alignment: .leading){
                 HStack {
-                    Text(eventsType)
+                    Text("Nos Próximos Dias")
                         .font(.title2)
-                    .fontWeight(.semibold)
-                    
+                        .fontWeight(.semibold)
                     Spacer()
                     NavigationLink(destination: CategoryView()){
-                        Text("Ver Tudo")//mudar esse destino aqui
+                        Text("Ver Tudo")//mudar o destino aqui
                             .foregroundColor(Color.blue)
                             .padding(.trailing)
                     }
                 }
-                
+                .padding(.top)
                 ScrollView(.horizontal){
                     HStack{
                         ForEach(eventList){ event in
-                            destaqueView(event: event)
+                            ProxDias(event: event)
                         }
                     }
                 }
@@ -40,9 +37,8 @@ struct DestaquesHStack: View {
     }
 }
 
-
-struct DestaquesHStack_Previews: PreviewProvider {
+struct ProxDiasHStack_Previews: PreviewProvider {
     static var previews: some View {
-        DestaquesHStack(eventList: EventList.events , eventsType: "Destaques")
+        ProxDiasHStack(eventList: EventList.events)
     }
 }

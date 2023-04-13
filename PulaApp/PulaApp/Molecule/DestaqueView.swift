@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct destaqueView: View {
-    var event: Event
+    @StateObject var event: Event
     
     var body: some View {
         
@@ -28,15 +28,7 @@ struct destaqueView: View {
                         Circle()
                             .colorInvert()
                             .frame(height: 30)
-                        
-                        if event.isSaved {
-                            Image(systemName: "bookmark.fill")
-                                .foregroundColor(Color.blue)
-                            
-                        } else {
-                            Image(systemName: "bookmark")
-                                .foregroundColor(Color.blue)
-                        }
+                        SaveButton(isSet: $event.isSaved)
                     }
                     .padding([.bottom, .trailing], 4.0)
                 }

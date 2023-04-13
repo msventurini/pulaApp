@@ -8,13 +8,24 @@
 import SwiftUI
 
 struct FavoritesView: View {
+    var events: [Event]
+    
     var body: some View {
-        Text("Itens salvos")
+        NavigationStack{
+            ScrollView{
+                VStack{
+                    ForEach(events) {event in
+                            SavedEvent(event: event)
+                    }
+                }
+            }
+        }
+    
     }
 }
 
 struct FavoritesView_Previews: PreviewProvider {
     static var previews: some View {
-        FavoritesView()
+        FavoritesView(events: EventList.events)
     }
 }

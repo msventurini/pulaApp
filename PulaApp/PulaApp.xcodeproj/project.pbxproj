@@ -14,8 +14,9 @@
 		68A5809729E5D70900F74587 /* CategoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68A5809629E5D70900F74587 /* CategoryView.swift */; };
 		737F89D829E5EBE900AC1C19 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 737F89D729E5EBE900AC1C19 /* MainView.swift */; };
 		73A0D00A29E72E400046D87A /* SaveButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73A0D00929E72E400046D87A /* SaveButton.swift */; };
-		73A0D00C29E737620046D87A /* ProxDias.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73A0D00B29E737620046D87A /* ProxDias.swift */; };
+		73A0D00C29E737620046D87A /* ProxDiasHStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73A0D00B29E737620046D87A /* ProxDiasHStack.swift */; };
 		73B7536229E7442500C72FFC /* SavedEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73B7536129E7442500C72FFC /* SavedEvent.swift */; };
+		73B7536429E86D9C00C72FFC /* ProxDias.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73B7536329E86D9C00C72FFC /* ProxDias.swift */; };
 		73E7A04929E5D2E10019A979 /* DestaquesHStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73E7A04829E5D2E10019A979 /* DestaquesHStack.swift */; };
 		73E7A04B29E5D4280019A979 /* FestivaisPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73E7A04A29E5D4280019A979 /* FestivaisPage.swift */; };
 		EA59A03D29E6A61C008BF790 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA59A03C29E6A61C008BF790 /* MapView.swift */; };
@@ -27,6 +28,7 @@
 		EA5F37C129E494C100D7DE04 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA5F37C029E494C100D7DE04 /* ContentView.swift */; };
 		EA5F37C329E494C200D7DE04 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EA5F37C229E494C200D7DE04 /* Assets.xcassets */; };
 		EA5F37C629E494C200D7DE04 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EA5F37C529E494C200D7DE04 /* Preview Assets.xcassets */; };
+		EA72F67B29E87D1B00D4E012 /* LocalInformationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA72F67929E87D1600D4E012 /* LocalInformationView.swift */; };
 		EA73592729E720DF00004B9E /* CategoryIconView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA73592529E720DF00004B9E /* CategoryIconView.swift */; };
 		EA73592829E720DF00004B9E /* DestaqueView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA73592629E720DF00004B9E /* DestaqueView.swift */; };
 		EAA5560929E4DC11006B91E7 /* EventCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAA5560829E4DC11006B91E7 /* EventCategory.swift */; };
@@ -42,8 +44,9 @@
 		68A5809629E5D70900F74587 /* CategoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryView.swift; sourceTree = "<group>"; };
 		737F89D729E5EBE900AC1C19 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		73A0D00929E72E400046D87A /* SaveButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SaveButton.swift; sourceTree = "<group>"; };
-		73A0D00B29E737620046D87A /* ProxDias.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProxDias.swift; sourceTree = "<group>"; };
+		73A0D00B29E737620046D87A /* ProxDiasHStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProxDiasHStack.swift; sourceTree = "<group>"; };
 		73B7536129E7442500C72FFC /* SavedEvent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavedEvent.swift; sourceTree = "<group>"; };
+		73B7536329E86D9C00C72FFC /* ProxDias.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProxDias.swift; sourceTree = "<group>"; };
 		73E7A04829E5D2E10019A979 /* DestaquesHStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DestaquesHStack.swift; sourceTree = "<group>"; };
 		73E7A04A29E5D4280019A979 /* FestivaisPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FestivaisPage.swift; sourceTree = "<group>"; };
 		EA59A03C29E6A61C008BF790 /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
@@ -56,6 +59,8 @@
 		EA5F37C029E494C100D7DE04 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		EA5F37C229E494C200D7DE04 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EA5F37C529E494C200D7DE04 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		EA667D8329E8624000013E41 /* LocalInformationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalInformationView.swift; sourceTree = "<group>"; };
+		EA72F67929E87D1600D4E012 /* LocalInformationView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocalInformationView.swift; sourceTree = "<group>"; };
 		EA73592529E720DF00004B9E /* CategoryIconView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoryIconView.swift; sourceTree = "<group>"; };
 		EA73592629E720DF00004B9E /* DestaqueView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DestaqueView.swift; sourceTree = "<group>"; };
 		EAA5560829E4DC11006B91E7 /* EventCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventCategory.swift; sourceTree = "<group>"; };
@@ -101,6 +106,7 @@
 				EA73592529E720DF00004B9E /* CategoryIconView.swift */,
 				EA73592629E720DF00004B9E /* DestaqueView.swift */,
 				EA59A04C29E6E7A8008BF790 /* MapIconsView.swift */,
+				73B7536329E86D9C00C72FFC /* ProxDias.swift */,
 			);
 			path = Molecule;
 			sourceTree = "<group>";
@@ -108,8 +114,9 @@
 		EA59A04A29E6E731008BF790 /* Organism */ = {
 			isa = PBXGroup;
 			children = (
+				EA72F67929E87D1600D4E012 /* LocalInformationView.swift */,
 				73E7A04829E5D2E10019A979 /* DestaquesHStack.swift */,
-				73A0D00B29E737620046D87A /* ProxDias.swift */,
+				73A0D00B29E737620046D87A /* ProxDiasHStack.swift */,
 			);
 			path = Organism;
 			sourceTree = "<group>";
@@ -143,6 +150,7 @@
 			children = (
 				EA5F37BD29E494C100D7DE04 /* PulaApp */,
 				EA5F37BC29E494C100D7DE04 /* Products */,
+				EABC111C29E87A7B00AF0661 /* Recovered References */,
 			);
 			sourceTree = "<group>";
 		};
@@ -176,6 +184,14 @@
 				EA5F37C529E494C200D7DE04 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		EABC111C29E87A7B00AF0661 /* Recovered References */ = {
+			isa = PBXGroup;
+			children = (
+				EA667D8329E8624000013E41 /* LocalInformationView.swift */,
+			);
+			name = "Recovered References";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -248,15 +264,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EA72F67B29E87D1B00D4E012 /* LocalInformationView.swift in Sources */,
 				1426306529E5D8CB00EDA95A /* onboardingContent1.swift in Sources */,
 				EAA5560B29E4E2DB006B91E7 /* Event.swift in Sources */,
 				EA59A03D29E6A61C008BF790 /* MapView.swift in Sources */,
 				EA73592729E720DF00004B9E /* CategoryIconView.swift in Sources */,
 				EA59A04129E6E247008BF790 /* FavoritesView.swift in Sources */,
-				73A0D00C29E737620046D87A /* ProxDias.swift in Sources */,
+				73A0D00C29E737620046D87A /* ProxDiasHStack.swift in Sources */,
 				1426306929E5DD1E00EDA95A /* onboardingContent2.swift in Sources */,
 				EA73592829E720DF00004B9E /* DestaqueView.swift in Sources */,
 				EA5F37C129E494C100D7DE04 /* ContentView.swift in Sources */,
+				73B7536429E86D9C00C72FFC /* ProxDias.swift in Sources */,
 				1426306B29E5E2B700EDA95A /* onboardingContent3.swift in Sources */,
 				737F89D829E5EBE900AC1C19 /* MainView.swift in Sources */,
 				68A5809729E5D70900F74587 /* CategoryView.swift in Sources */,
