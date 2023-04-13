@@ -31,7 +31,6 @@ struct DestaquesHStack: View {
                 ScrollView(.horizontal){
                     HStack{
                         ForEach(eventList){ event in
-                            //var date: String = event.date.formatted(.dateTime.day()) + "." + event.date.formatted(.dateTime.month(.twoDigits)) + " | " + event.date.formatted(.dateTime.hour())
                             destaqueView(event: event)
                         }
                     }
