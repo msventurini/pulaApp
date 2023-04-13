@@ -11,15 +11,25 @@ struct FavoritesView: View {
     var events: [Event]
     
     var body: some View {
-        NavigationStack{
-            ScrollView{
-                VStack{
-                    ForEach(events) {event in
-                            SavedEvent(event: event)
+        
+        GeometryReader { geometry in
+            
+            NavigationStack{
+                ScrollView{
+                    VStack{
+                        ForEach(events) {event in
+                            SavedEvent(event: event, width: geometry.size.width, height: geometry.size.height)
+                        }
+                        
+                        
                     }
                 }
             }
+            
+            
         }
+        
+        
     
     }
 }

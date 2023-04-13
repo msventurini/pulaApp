@@ -10,6 +10,9 @@ import SwiftUI
 struct SavedEvent: View {
     @StateObject var event: Event
     
+    var width: Double
+    var height: Double
+    
     var body: some View {
         
         var date: String = event.date.formatted(.dateTime.day()) + "." + event.date.formatted(.dateTime.month(.twoDigits)) + " | " + event.date.formatted(.dateTime.hour())
@@ -21,8 +24,8 @@ struct SavedEvent: View {
                         Image(event.image)
                             .resizable()//acertar esses com as novas assets
                             .aspectRatio(contentMode: .fill)
-                            .scaledToFit()//
-                            .frame(height:95)
+                            .scaledToFill()//
+                            .frame(width: width * 0.88,height:height/6)
                             .cornerRadius(8)
                         
                         ZStack{
@@ -49,7 +52,7 @@ struct SavedEvent: View {
                         .fontWeight(.regular)
                     
                 }
-                .padding(.trailing)
+//                .padding(.trailing)
                 .aspectRatio(contentMode: .fit)
             }
         }
@@ -58,6 +61,6 @@ struct SavedEvent: View {
 
 struct SavedEvent_Previews: PreviewProvider {
     static var previews: some View {
-        SavedEvent(event: EventList.events[1])
+        SavedEvent(event: EventList.events[1], width: 390, height:  844)
     }
 }
