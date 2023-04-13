@@ -25,7 +25,7 @@ struct ProxDiasHStack: View {
                     }
                 }
                 .padding(.top)
-                ScrollView(.horizontal){
+                ScrollView(.horizontal, showsIndicators: false){
                     HStack{
                         ForEach(eventList){ event in
                             ProxDias(event: event)

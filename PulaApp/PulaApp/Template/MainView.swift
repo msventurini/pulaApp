@@ -12,7 +12,7 @@ struct MainView: View {
     var body: some View {
         
         NavigationStack{
-            ScrollView{
+            ScrollView(showsIndicators: false) {
                 VStack(alignment: .leading){
                     
                     HStack {
@@ -28,7 +28,7 @@ struct MainView: View {
                         
                     }
                     
-                    ScrollView(.horizontal){
+                    ScrollView(.horizontal, showsIndicators: false){
                         HStack{
                             HStack(spacing: 16) {
                                 ForEach(0...8, id:\.self) {
@@ -49,7 +49,7 @@ struct MainView: View {
             .navigationTitle("Boas Vindas!")
         }
         .searchable(text: $query)
-        .accentColor(.black)
+        .accentColor(.primary)
     }
 }
 
