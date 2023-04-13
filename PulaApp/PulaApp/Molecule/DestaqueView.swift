@@ -17,12 +17,15 @@ struct destaqueView: View {
         NavigationStack{
             VStack(alignment: .leading){
                 ZStack(alignment: .bottomTrailing){
-                    Image(event.image)
-                        .resizable()//acertar esses com as novas assets
-                        .aspectRatio(contentMode: .fill)
-                        .scaledToFit()//
-                        .frame(height:95)
-                        .cornerRadius(8)
+                    NavigationLink(destination: DetailView(event: event)){
+                        
+                        Image(event.image)
+                            .resizable()//acertar esses com as novas assets
+                            .aspectRatio(contentMode: .fill)
+                            .scaledToFit()//
+                            .frame(height:95)
+                            .cornerRadius(8)
+                    }
                     
                     ZStack{
                         Circle()
