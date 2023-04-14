@@ -25,6 +25,8 @@ struct FestivaisPage: View {
                 .padding(.leading)
             }
             .navigationTitle(title)
+            .navigationBarTitleDisplayMode(.inline)
+            .toolbarBackground(.visible, for: .navigationBar)
         }
     }
 }
