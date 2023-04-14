@@ -31,8 +31,9 @@ struct LocalInformationView: View {
                             .offset(x: geometry.size.width * 0.125, y: geometry.size.height * 0.1 - (geometry.size.width * 0.1)/1.75) //x = 0.35 / 2 - metade do quadrado
                             .colorInvert()
                         
-                        MapIcon(event: event,widht: geometry.size.width, height: geometry.size.height)
-                            .frame(width: geometryOut.size.width * 0.35, height: geometry.size.height * 0.1)
+                        MapIcon(event: event)
+                            .offset( y: geometry.size.height * (0.044)/2)
+                            //.frame(width: geometryOut.size.width * 0.35, height: geometry.size.height * 0.1)
 
                     }.frame(width: geometryOut.size.width * 1.125, height: geometryOut.size.height * 1.125)
                     
