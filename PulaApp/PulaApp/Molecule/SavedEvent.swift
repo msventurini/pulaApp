@@ -19,14 +19,16 @@ struct SavedEvent: View {
         
         NavigationStack{
             if event.isSaved {
+
+                
+                
                 VStack(alignment: .leading){
                     ZStack(alignment: .bottomTrailing){
                         Image(event.image)
                             .resizable()//acertar esses com as novas assets
-                            .aspectRatio(contentMode: .fill)
                             .scaledToFill()//
-                            .frame(width: width * 0.88,height:height/6)
-                            .cornerRadius(8)
+                            .frame(height:height/2)
+                            .clipped()
                         
                         ZStack{
                             Circle()
@@ -38,22 +40,47 @@ struct SavedEvent: View {
                         .padding([.bottom, .trailing], 4.0)
                     }
                     
-                    Text(date)
-                        .font(.caption)
-                        .fontWeight(.semibold)
-                        .padding(.vertical, 1.0)
+                    VStack (alignment: .leading){
+                        Text(date)
+                            .font(.callout)
+                            .fontWeight(.bold)
+                            .padding()
+
+    
+                        
+                        Text(event.name)
+                            .font(.body)
+                            .fontWeight(.regular)
+                            .padding(.horizontal)
+
+                        
+                        Text(event.location)
+                            .font(.caption)
+                            .fontWeight(.regular)
+                            .padding(.horizontal)
+
+                    }
+                    .frame(height: height/2, alignment: .top)
                     
-                    Text(event.name)
-                        .font(.body)
-                        .fontWeight(.regular)
+
                     
-                    Text(event.location)
-                        .font(.caption)
-                        .fontWeight(.regular)
+                    
+                    
+                    
                     
                 }
 //                .padding(.trailing)
                 .aspectRatio(contentMode: .fit)
+                .background(
+                    .background,
+                    in: RoundedRectangle(cornerRadius: 4)
+                )
+                .clipShape(
+                    RoundedRectangle(cornerRadius: 20, style: .continuous)
+                )
+                .padding()
+                .shadow(radius: 10)
+                
             }
         }
     }
@@ -61,6 +88,6 @@ struct SavedEvent: View {
 
 struct SavedEvent_Previews: PreviewProvider {
     static var previews: some View {
-        SavedEvent(event: EventList.events[1], width: 390, height:  844)
+        SavedEvent(event: EventList.events[1], width: 390 * 0.9, height:  844 * 0.3)
     }
 }
