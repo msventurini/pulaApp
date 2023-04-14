@@ -19,7 +19,7 @@ struct DetailView: View {
         var hour: String = event.date.formatted(.dateTime.hour())
         GeometryReader { geometry in
 
-        ScrollView{
+            ScrollView(showsIndicators: false){
             VStack(alignment: .leading) {
                 ZStack{
                     Image(event.image)
@@ -41,7 +41,7 @@ struct DetailView: View {
                         VStack(alignment: .leading){
                             Text(event.location)
                                 .font(.body)
-                            Text(event.location)
+                            Text(event.location1)
                                 .font(.caption)
                         }
                         .fontWeight(.regular)
@@ -63,6 +63,7 @@ struct DetailView: View {
                     .padding(.leading, 24.0)
                 }
                 
+                
                 Text("Descrição do Evento")
                     .font(.title3)
                     .fontWeight(.semibold)
@@ -71,7 +72,7 @@ struct DetailView: View {
                 Text(event.description)
                     .font(.body)
                     .fontWeight(.regular)
-                    .padding(.leading, 24.0)
+                    .padding(.horizontal, 24.0)
                     .lineLimit(descriptionLimit ? 5 : 100)
                 
                 Button(descriptionLimit ? "Ver Mais" : "Ver Menos") {
@@ -88,15 +89,18 @@ struct DetailView: View {
                 
                 HStack{
                     Spacer()
-                    Circle() //mudar esse circle pro logo do grupo
+                    Image(event.image)
+                        .resizable()
+                        .scaledToFit()
                         .frame(height: 93)
+                        .clipShape(Circle())
                     Spacer()
                 }
                 
-                Text(event.description) //mudar essa descrição para a descricao do grupo
+                Text(event.description1) //mudar essa descrição para a descricao do grupo
                     .font(.body)
                     .fontWeight(.regular)
-                    .padding(.leading, 24.0)
+                    .padding(.horizontal, 24.0)
                     .lineLimit(groupLimit ? 5 : 100)
                 
                 Button(groupLimit ? "Ver Mais" : "Ver Menos") {
@@ -106,6 +110,7 @@ struct DetailView: View {
                 .padding(.top, 1)
                 .foregroundColor(Color.blue)
             }
+            
         }
     }
     }
@@ -113,6 +118,6 @@ struct DetailView: View {
 
 struct DetailView_Previews: PreviewProvider {
     static var previews: some View {
-        DetailView(event: EventList.events[3])
+        DetailView(event: EventList.events[0])
     }
 }
