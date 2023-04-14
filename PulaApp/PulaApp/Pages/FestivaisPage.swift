@@ -14,12 +14,12 @@ struct FestivaisPage: View {
         NavigationStack {
             ScrollView{
                 VStack{
-                    DestaquesHStack(eventList: EventList.events, eventsType: "Destaques")
+                    MediumIconHStack(eventList: EventList.events, eventsType: "Destaques")
                         .padding(.vertical)
                     
-                    DestaquesHStack(eventList: EventList.events, eventsType: "Neste Fim de Semana")
+                    MediumIconHStack(eventList: EventList.events, eventsType: "Neste Fim de Semana")
                         .padding(.vertical)
-                    DestaquesHStack(eventList: EventList.events, eventsType: "Na Próxima Semana")
+                    MediumIconHStack(eventList: EventList.events, eventsType: "Na Próxima Semana")
                         .padding(.vertical)
                 }
                 .padding(.leading)
