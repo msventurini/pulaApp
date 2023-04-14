@@ -17,23 +17,23 @@ struct MapView: View {
                                 
                 LocalInformationView(event: EventList.events[0])
                     .offset(
-                        x: geometry.size.width * 0.6,
-                        y: geometry.size.height * 0.1
+                        x: geometry.size.width * 0.48,
+                        y: geometry.size.height * 0.05
                     )
                 
                 LocalInformationView(event: EventList.events[1])
                     .offset(
-                        x: geometry.size.width * 0.3,
-                        y: geometry.size.height * 0.25)
+                        x: geometry.size.width * 0.17,
+                        y: geometry.size.height * 0.215)
                 
                 LocalInformationView(event: EventList.events[2])
                     .offset(
-                        x: geometry.size.width * 0.75,
-                        y: geometry.size.height * 0.4)
+                        x: geometry.size.width * 0.57,
+                        y: geometry.size.height * 0.38)
                 
                 LocalInformationView(event: EventList.events[3])
                     .offset(
-                        x: geometry.size.width * 0.25,
+                        x: geometry.size.width * 0.13,
                         y: geometry.size.height * 0.5)
 
                 
