@@ -27,11 +27,7 @@ struct MapIcon: View {
                             .cornerRadius(10)
                             //.cornerRadius(geometry.size.height/100)
                             //.position(x: baloonWidth * 0.28)
-                    }
 
-                    
-                }
-                
                 
                     
                 VStack (alignment: .leading){
@@ -50,6 +46,9 @@ struct MapIcon: View {
             .frame(width: baloonWidth)
             
         }
+            }
+        }
+        
         
         
         
