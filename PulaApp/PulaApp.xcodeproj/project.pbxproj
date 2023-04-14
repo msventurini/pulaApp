@@ -109,11 +109,11 @@
 			isa = PBXGroup;
 			children = (
 				73B7536129E7442500C72FFC /* SavedEvent.swift */,
-				EA73592529E720DF00004B9E /* CategoryIconView.swift */,
 				EA73592629E720DF00004B9E /* DestaqueView.swift */,
 				EA59A04C29E6E7A8008BF790 /* MapIconsView.swift */,
 				73B7536329E86D9C00C72FFC /* ProxDias.swift */,
 				EAA5A6DB29E932C1001F9BEF /* LargeEventIcon.swift */,
+				EA73592529E720DF00004B9E /* CategoryIconView.swift */,
 			);
 			path = Molecule;
 			sourceTree = "<group>";
