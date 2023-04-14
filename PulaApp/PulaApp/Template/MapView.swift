@@ -15,7 +15,8 @@ struct MapView: View {
                 ZStack {
                     Image("mapa")
                         .resizable()
-                        .aspectRatio(contentMode: .fit)
+                        .aspectRatio(contentMode: .fill)
+                        .frame(width: geometry.size.width)
                                     
                     LocalInformationView(event: EventList.events[0])
                         .offset(

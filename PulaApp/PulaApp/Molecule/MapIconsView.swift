@@ -24,6 +24,7 @@ struct MapIcon: View {
                     .scaledToFill()                   
                     .frame(width: baloonWidth * 0.9 * 0.5, height: baloonHeight ,alignment: .center)
                     .clipped()
+                    .cornerRadius(10)
                     //.cornerRadius(geometry.size.height/100)
                     //.position(x: baloonWidth * 0.28)
                     

@@ -23,7 +23,7 @@ struct LocalInformationView: View {
                                         
                     GeometryReader { geometry in
                         
-                        RoundedRectangle(cornerRadius: 5)
+                        RoundedRectangle(cornerRadius: 10)
                             .frame(width: geometry.size.width * 0.35,height: geometry.size.height * 0.1)
                             //.scaledToFit()
                             .colorInvert()

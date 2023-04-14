@@ -70,7 +70,7 @@ struct LargeEventIcon: View {
                     RoundedRectangle(cornerRadius: 20, style: .continuous)
                 )
                 .padding()
-                .shadow(radius: 10)
+                .shadow(color: Color.primary,radius: 5)
                 
             
         }
