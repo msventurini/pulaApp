@@ -10,8 +10,6 @@ import SwiftUI
 struct LocalInformationView: View {
     
     var event: Event
-    var width: Double
-    var height: Double
 
     var body: some View {
         
@@ -36,7 +34,7 @@ struct LocalInformationView: View {
                         MapIcon(event: event,widht: geometry.size.width, height: geometry.size.height)
                             .frame(width: geometryOut.size.width * 0.35, height: geometry.size.height * 0.1)
 
-                    }
+                    }.frame(width: geometryOut.size.width * 1.125, height: geometryOut.size.height * 1.125)
                     
 
                 }
@@ -52,7 +50,7 @@ struct LocalInformationView: View {
 
 struct LocalInformationView_Previews: PreviewProvider {
     static var previews: some View {
-        LocalInformationView(event: EventList.events[0], width: 393, height: 842.59)
+        LocalInformationView(event: EventList.events[0])
             .background(.blue)
     }
 }
