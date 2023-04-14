@@ -35,6 +35,9 @@
 		EAA5560929E4DC11006B91E7 /* EventCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAA5560829E4DC11006B91E7 /* EventCategory.swift */; };
 		EAA5560B29E4E2DB006B91E7 /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAA5560A29E4E2DB006B91E7 /* Event.swift */; };
 		EAA5560D29E4FEC6006B91E7 /* EventList.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAA5560C29E4FEC6006B91E7 /* EventList.swift */; };
+		EAA5A6DC29E932C1001F9BEF /* LargeEventIcon.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAA5A6DB29E932C1001F9BEF /* LargeEventIcon.swift */; };
+		EAA5A6DE29E93516001F9BEF /* DetailedEventViewList.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAA5A6DD29E93516001F9BEF /* DetailedEventViewList.swift */; };
+		EAA5A6E029E935ED001F9BEF /* NextDaysView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAA5A6DF29E935ED001F9BEF /* NextDaysView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -68,6 +71,9 @@
 		EAA5560829E4DC11006B91E7 /* EventCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventCategory.swift; sourceTree = "<group>"; };
 		EAA5560A29E4E2DB006B91E7 /* Event.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
 		EAA5560C29E4FEC6006B91E7 /* EventList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventList.swift; sourceTree = "<group>"; };
+		EAA5A6DB29E932C1001F9BEF /* LargeEventIcon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LargeEventIcon.swift; sourceTree = "<group>"; };
+		EAA5A6DD29E93516001F9BEF /* DetailedEventViewList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailedEventViewList.swift; sourceTree = "<group>"; };
+		EAA5A6DF29E935ED001F9BEF /* NextDaysView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NextDaysView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +115,7 @@
 				EA73592629E720DF00004B9E /* DestaqueView.swift */,
 				EA59A04C29E6E7A8008BF790 /* MapIconsView.swift */,
 				73B7536329E86D9C00C72FFC /* ProxDias.swift */,
+				EAA5A6DB29E932C1001F9BEF /* LargeEventIcon.swift */,
 			);
 			path = Molecule;
 			sourceTree = "<group>";
@@ -131,6 +138,7 @@
 				73B7536729E8824600C72FFC /* DetailView.swift */,
 				EA59A03C29E6A61C008BF790 /* MapView.swift */,
 				737F89D729E5EBE900AC1C19 /* MainView.swift */,
+				EAA5A6DD29E93516001F9BEF /* DetailedEventViewList.swift */,
 			);
 			path = Template;
 			sourceTree = "<group>";
@@ -144,6 +152,7 @@
 				1426306A29E5E2B700EDA95A /* onboardingContent3.swift */,
 				68A5809629E5D70900F74587 /* CategoryView.swift */,
 				73E7A04A29E5D4280019A979 /* FestivaisPage.swift */,
+				EAA5A6DF29E935ED001F9BEF /* NextDaysView.swift */,
 			);
 			path = Pages;
 			sourceTree = "<group>";
@@ -276,18 +285,21 @@
 				73A0D00C29E737620046D87A /* ProxDiasHStack.swift in Sources */,
 				1426306929E5DD1E00EDA95A /* onboardingContent2.swift in Sources */,
 				EA73592829E720DF00004B9E /* DestaqueView.swift in Sources */,
+				EAA5A6DE29E93516001F9BEF /* DetailedEventViewList.swift in Sources */,
 				EA5F37C129E494C100D7DE04 /* ContentView.swift in Sources */,
 				73B7536429E86D9C00C72FFC /* ProxDias.swift in Sources */,
 				1426306B29E5E2B700EDA95A /* onboardingContent3.swift in Sources */,
 				737F89D829E5EBE900AC1C19 /* MainView.swift in Sources */,
 				68A5809729E5D70900F74587 /* CategoryView.swift in Sources */,
 				EA5F37C129E494C100D7DE04 /* ContentView.swift in Sources */,
+				EAA5A6E029E935ED001F9BEF /* NextDaysView.swift in Sources */,
 				73E7A04B29E5D4280019A979 /* FestivaisPage.swift in Sources */,
 				EA5F37BF29E494C100D7DE04 /* PulaAppApp.swift in Sources */,
 				EA59A04629E6E3D5008BF790 /* EventCategoryList.swift in Sources */,
 				73B7536229E7442500C72FFC /* SavedEvent.swift in Sources */,
 				73B7536829E8824600C72FFC /* DetailView.swift in Sources */,
 				73E7A04929E5D2E10019A979 /* DestaquesHStack.swift in Sources */,
+				EAA5A6DC29E932C1001F9BEF /* LargeEventIcon.swift in Sources */,
 				EAA5560D29E4FEC6006B91E7 /* EventList.swift in Sources */,
 				1426306D29E5EE5000EDA95A /* onboardingCard.swift in Sources */,
 				73A0D00A29E72E400046D87A /* SaveButton.swift in Sources */,
