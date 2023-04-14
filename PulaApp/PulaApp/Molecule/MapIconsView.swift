@@ -38,6 +38,7 @@ struct MapIcon: View {
                         
                     Text(event.name)
                         .font(.body)
+                        .lineLimit(1)
                 }
                 .frame(width: baloonWidth  * 0.9 * 0.45,alignment: .center)
                 //.position(x: baloonWidth * 0.07 + (baloonWidth * 0.3/2))
