@@ -17,15 +17,23 @@ struct LargeEventIcon: View {
         
         var date: String = event.date.formatted(.dateTime.day()) + "." + event.date.formatted(.dateTime.month(.twoDigits)) + " | " + event.date.formatted(.dateTime.hour())
         
-        NavigationStack{
 
                 VStack(alignment: .leading){
                     ZStack(alignment: .bottomTrailing){
-                        Image(event.image)
-                            .resizable()//acertar esses com as novas assets
-                            .scaledToFill()//
-                            .frame(height:height/2)
-                            .clipped()
+                        
+                        NavigationStack {
+                            NavigationLink(destination: DetailView(event: event)) {
+                                Image(event.image)
+                                    .resizable()//acertar esses com as novas assets
+                                    .scaledToFill()//
+                                    .frame(height:height/2)
+                                    .clipped()
+                            }
+
+                            
+                        }
+                        
+
                         
                         ZStack{
                             Circle()
@@ -73,7 +81,7 @@ struct LargeEventIcon: View {
                 .shadow(color: Color.primary,radius: 5)
                 
             
-        }
+        
     }
 }
 

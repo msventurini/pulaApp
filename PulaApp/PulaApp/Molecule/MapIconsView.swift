@@ -17,16 +17,22 @@ struct MapIcon: View {
     var body: some View {
         GeometryReader { geometry in
             HStack (alignment: .center){
+                NavigationStack {
+                    NavigationLink(destination: DetailView(event: event)) {
+                        Image(String(event.image))
+                            .resizable()
+                            .scaledToFill()
+                            .frame(width: baloonWidth * 0.9 * 0.5, height: baloonHeight ,alignment: .center)
+                            .clipped()
+                            .cornerRadius(10)
+                            //.cornerRadius(geometry.size.height/100)
+                            //.position(x: baloonWidth * 0.28)
+                    }
+
+                    
+                }
                 
                 
-                Image(String(event.image))
-                    .resizable()
-                    .scaledToFill()                   
-                    .frame(width: baloonWidth * 0.9 * 0.5, height: baloonHeight ,alignment: .center)
-                    .clipped()
-                    .cornerRadius(10)
-                    //.cornerRadius(geometry.size.height/100)
-                    //.position(x: baloonWidth * 0.28)
                     
                 VStack (alignment: .leading){
                     Text(event.date.formatted(.dateTime.day()) + "." + event.date.formatted(.dateTime.month(.twoDigits)))
