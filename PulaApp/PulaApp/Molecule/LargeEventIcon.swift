@@ -41,9 +41,9 @@ struct LargeEventIcon: View {
                         Text(date)
                             .font(.callout)
                             .fontWeight(.bold)
-                            .padding()
+                            .padding([.top, .leading])
 
-    
+                        Spacer()
                         
                         Text(event.name)
                             .font(.body)
@@ -55,6 +55,7 @@ struct LargeEventIcon: View {
                             .font(.caption)
                             .fontWeight(.regular)
                             .padding(.horizontal)
+                        Spacer()
 
                     }
                     .frame(height: height/2, alignment: .top)

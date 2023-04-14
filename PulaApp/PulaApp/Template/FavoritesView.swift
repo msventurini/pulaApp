@@ -23,8 +23,13 @@ struct FavoritesView: View {
                         
                         
                     }
+                    .navigationTitle("Salvos")
+                    .navigationBarTitleDisplayMode(.inline)
+                    .toolbarBackground(.visible, for: .navigationBar)
                 }
             }
+
+
             
             
         }
