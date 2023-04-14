@@ -19,15 +19,21 @@ struct LocalInformationView: View {
                 
                 var viewHeight: Double = height / 10.5
                 
-                RoundedRectangle(cornerRadius: 5)
-                    .frame(width: viewHeight*2, height: viewHeight)
-                    .colorInvert()
+                GeometryReader { geometry in
                 
-                RoundedRectangle(cornerRadius: 5)
-                    .rotation(Angle(degrees: 45))
-                    .frame(width: viewHeight/2, height: viewHeight/2)
-                    .offset(y:30)
-                    .colorInvert()
+                    RoundedRectangle(cornerRadius: 5)
+                        .frame(width: geometry.size.width * 0.35,height: geometry.size.height * 0.1)
+                        //.scaledToFit()
+//                        .colorInvert()
+                    
+                    RoundedRectangle(cornerRadius: 5)
+                        .rotation(Angle(degrees: 45))
+                        .frame(width: geometry.size.width * 0.1, height: geometry.size.width * 0.1)
+                        .offset(x: geometry.size.width * 0.125, y: geometry.size.height * 0.1 - (geometry.size.width * 0.1)/1.75) //x = 0.35 / 2 - metade do quadrado
+                        .colorInvert()
+                }
+                
+                
             }
             MapIcon(event: event,widht: width, height: height)
 
