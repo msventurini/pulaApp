@@ -40,7 +40,7 @@ struct MainView: View {
                     
                     ProxDiasHStack(eventList: EventList.events)
                     
-                    DestaquesHStack(eventList: EventList.events, eventsType: "Destaques")
+                    MediumIconHStack(eventList: EventList.events, eventsType: "Destaques")
                         .padding(.top)
                 }
                 

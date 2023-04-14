@@ -14,21 +14,16 @@ struct ContentView: View {
             TabView{
                 MainView()
                     .tabItem {
-                        Image(systemName: "calendar")
-                        Text("Principal")
+                        Label("Principal", systemImage: "calendar")
                     }
                 
                 FavoritesView(events: EventList.events)
                     .tabItem {
-                        //pq esse bookmark não está vazado?
-                        Image(systemName: "bookmark")
-                        Text("Salvos")
-                            .bold()
+                        Label("Salvos", systemImage: "bookmark")
                     }
                 MapView()
                     .tabItem {
-                        Image(systemName: "map")
-                        Text("Mapa")
+                        Label("Mapa", systemImage: "map")
                     }
             }
             

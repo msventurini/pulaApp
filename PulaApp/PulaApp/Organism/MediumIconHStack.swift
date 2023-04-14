@@ -1,14 +1,13 @@
 //
-//  DestaquesHStack.swift
+//  MediumIconHStack.swift
 //  PulaApp
 //
-//  Created by Felippo Stedile on 11/04/23.
+//  Created by Matheus Silveira Venturini on 14/04/23.
 //
 
 import SwiftUI
 
-struct DestaquesHStack: View {
-    
+struct MediumIconHStack: View {
     var eventList: [Event]
     var eventsType: String
     
@@ -21,7 +20,7 @@ struct DestaquesHStack: View {
                     .fontWeight(.semibold)
                     
                     Spacer()
-                    NavigationLink(destination: CategoryView()){
+                    NavigationLink(destination: DetailedEventViewList(events: eventList, viewTitle: eventsType)){
                         Text("Ver Tudo")//mudar esse destino aqui
                             .foregroundColor(Color.blue)
                             .padding(.trailing)
@@ -40,9 +39,8 @@ struct DestaquesHStack: View {
     }
 }
 
-
-struct DestaquesHStack_Previews: PreviewProvider {
+struct MediumIconHStack_Previews: PreviewProvider {
     static var previews: some View {
-        DestaquesHStack(eventList: EventList.events , eventsType: "Destaques")
+        MediumIconHStack(eventList: EventList.events , eventsType: "Destaques")
     }
 }

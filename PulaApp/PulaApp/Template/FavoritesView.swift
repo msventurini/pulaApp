@@ -18,13 +18,18 @@ struct FavoritesView: View {
                 ScrollView{
                     VStack{
                         ForEach(events) {event in
-                            SavedEvent(event: event, width: geometry.size.width, height: geometry.size.height)
+                            SavedEvent(event: event, width: geometry.size.width * 0.9, height: geometry.size.height * 0.3)
                         }
                         
                         
                     }
+                    .navigationTitle("Salvos")
+                    .navigationBarTitleDisplayMode(.inline)
+                    .toolbarBackground(.visible, for: .navigationBar)
                 }
             }
+
+
             
             
         }

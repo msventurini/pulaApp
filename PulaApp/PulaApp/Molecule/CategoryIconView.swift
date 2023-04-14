@@ -15,6 +15,7 @@ struct CategoryIcon: View {
             VStack {
                 NavigationLink(destination: FestivaisPage(title: category.name)) {
                     Image(category.imgName)
+                        .interpolation(.high).antialiased(true)
                         .resizable()
                         .scaledToFit()
                         .clipShape(Circle())

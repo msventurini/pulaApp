@@ -10,34 +10,57 @@ import SwiftUI
 struct LocalInformationView: View {
     
     var event: Event
-    var width: Double
-    var height: Double
 
     var body: some View {
-        ZStack {
+        
+        
+        GeometryReader { geometryOut in
             ZStack {
                 
-                var viewHeight: Double = height / 10.5
                 
-                RoundedRectangle(cornerRadius: 5)
-                    .frame(width: viewHeight*2, height: viewHeight)
-                    .colorInvert()
                 
-                RoundedRectangle(cornerRadius: 5)
-                    .rotation(Angle(degrees: 45))
-                    .frame(width: viewHeight/2, height: viewHeight/2)
-                    .offset(y:30)
-                    .colorInvert()
-            }
-            MapIcon(event: event,widht: width, height: height)
+                ZStack {
+                                        
+                    GeometryReader { geometry in
+                        
+                        RoundedRectangle(cornerRadius: 10)
+                            .frame(width: geometry.size.width * 0.35,height: geometry.size.height * 0.1)
+                            //.scaledToFit()
+                            .colorInvert()
+                        
+                        RoundedRectangle(cornerRadius: 5)
+                            .rotation(Angle(degrees: 45))
+                            .frame(width: geometry.size.width * 0.1, height: geometry.size.width * 0.1)
+                            .offset(x: geometry.size.width * 0.125, y: geometry.size.height * 0.1 - (geometry.size.width * 0.1)/1.75) //x = 0.35 / 2 - metade do quadrado
+                            .colorInvert()
+                      
+                                                    
+                            MapIcon(event: event, baloonWidth: geometry.size.width * 0.35, baloonHeight: geometry.size.height * 0.07)
+                            .padding(.top, geometry.size.height * 0.015)
+                            .padding(.bottom, geometry.size.height * 0.02)
 
+                                //.offset(y: geometry.safeAreaInsets.trailing)
+                            
+                            //.frame(width: geometryOut.size.width * 0.35, height: geometry.size.height * 0.1)
+
+                    }//.frame(width: geometryOut.size.width * 1.125, height: geometryOut.size.height * 1.125)
+                    
+
+                }
+
+            }
+            
         }
+        
+        
+        
         
     }
 }
 
 struct LocalInformationView_Previews: PreviewProvider {
     static var previews: some View {
-        LocalInformationView(event: EventList.events[0], width: 393, height: 842.59)
+        LocalInformationView(event: EventList.events[0])
+            .background(.blue)
     }
 }

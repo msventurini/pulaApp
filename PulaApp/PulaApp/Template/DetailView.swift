@@ -17,12 +17,15 @@ struct DetailView: View {
         var date: String = event.date.formatted(.dateTime.day()) + "." + event.date.formatted(.dateTime.month(.twoDigits))
         
         var hour: String = event.date.formatted(.dateTime.hour())
-        
+        GeometryReader { geometry in
+
         ScrollView{
             VStack(alignment: .leading) {
                 ZStack{
                     Image(event.image)
                         .resizable()
+                        .frame(height: geometry.size.width/2)
+                        .clipped()
                         .scaledToFit()
                 }
                 Text(event.name + " | " + date)
@@ -95,7 +98,7 @@ struct DetailView: View {
                     .fontWeight(.regular)
                     .padding(.leading, 24.0)
                     .lineLimit(groupLimit ? 5 : 100)
-
+                
                 Button(groupLimit ? "Ver Mais" : "Ver Menos") {
                     groupLimit.toggle()
                 }
@@ -104,6 +107,7 @@ struct DetailView: View {
                 .foregroundColor(Color.blue)
             }
         }
+    }
     }
 }
 

@@ -17,8 +17,8 @@ struct ProxDias: View {
                 NavigationLink(destination: DetailView(event: event)){
                     Image(event.image)
                         .resizable()
-                        .scaledToFit()
-                        .frame(height:185)
+                        .scaledToFill()
+                        .frame(width: 293, height:185)
                         .cornerRadius(8)
                         .padding(.trailing)
                     

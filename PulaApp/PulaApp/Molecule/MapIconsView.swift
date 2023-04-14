@@ -11,29 +11,45 @@ struct MapIcon: View {
     
     
     var event: Event
-    var widht: Double
-    var height: Double
+    var baloonWidth: Double
+    var baloonHeight: Double
     
     var body: some View {
-        
-        HStack {
-            
-            
-            Image(String(event.image))
-                .resizable()
-                .aspectRatio(contentMode: .fill)
-                .frame(width: height/15.6, height: height/17.5)
-                .cornerRadius(height/100)
+        GeometryReader { geometry in
+            HStack (alignment: .center){
+                NavigationStack {
+                    NavigationLink(destination: DetailView(event: event)) {
+                        Image(String(event.image))
+                            .resizable()
+                            .scaledToFill()
+                            .frame(width: baloonWidth * 0.9 * 0.5, height: baloonHeight ,alignment: .center)
+                            .clipped()
+                            .cornerRadius(10)
+                            //.cornerRadius(geometry.size.height/100)
+                            //.position(x: baloonWidth * 0.28)
+
                 
-            VStack (alignment: .leading){
-                Text(event.date.formatted(.dateTime.day()) + "." + event.date.formatted(.dateTime.month(.twoDigits)))
-                    .font(.body)
-                    .bold()
-                Text(event.name)
-                    .font(.body)
+                    
+                VStack (alignment: .leading){
+                    Text(event.date.formatted(.dateTime.day()) + "." + event.date.formatted(.dateTime.month(.twoDigits)))
+                        .font(.body)
+                        .bold()
+                        
+                        
+                    Text(event.name)
+                        .font(.body)
+                }
+                .frame(width: baloonWidth  * 0.9 * 0.45,alignment: .center)
+                //.position(x: baloonWidth * 0.07 + (baloonWidth * 0.3/2))
+
+            }
+            .frame(width: baloonWidth)
+            
+        }
             }
         }
-        .frame(width: height/6.5, height: height/17.5)
+        
+        
         
         
         
@@ -44,8 +60,9 @@ struct MapIcon: View {
     
     
     struct MapIcon_Previews: PreviewProvider {
+                
         static var previews: some View {
-            MapIcon(event: EventList.events[0], widht: 393, height: 842.59)
+            MapIcon(event: EventList.events[0], baloonWidth: UIScreen.main.bounds.size.width * 0.35, baloonHeight: UIScreen.main.bounds.size.height * 0.1)
         }
     }
 }

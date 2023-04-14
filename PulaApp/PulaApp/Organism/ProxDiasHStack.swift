@@ -18,8 +18,8 @@ struct ProxDiasHStack: View {
                         .font(.title2)
                         .fontWeight(.semibold)
                     Spacer()
-                    NavigationLink(destination: CategoryView()){
-                        Text("Ver Tudo")//mudar o destino aqui
+                    NavigationLink(destination: DetailedEventViewList(events: eventList, viewTitle: "Nos próximos dias")){
+                        Text("Ver Tudo")
                             .foregroundColor(Color.blue)
                             .padding(.trailing)
                     }
