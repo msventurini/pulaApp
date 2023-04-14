@@ -37,7 +37,6 @@
 		EAA5560D29E4FEC6006B91E7 /* EventList.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAA5560C29E4FEC6006B91E7 /* EventList.swift */; };
 		EAA5A6DC29E932C1001F9BEF /* LargeEventIcon.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAA5A6DB29E932C1001F9BEF /* LargeEventIcon.swift */; };
 		EAA5A6DE29E93516001F9BEF /* DetailedEventViewList.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAA5A6DD29E93516001F9BEF /* DetailedEventViewList.swift */; };
-		EAA5A6E029E935ED001F9BEF /* NextDaysView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAA5A6DF29E935ED001F9BEF /* NextDaysView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -73,7 +72,6 @@
 		EAA5560C29E4FEC6006B91E7 /* EventList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventList.swift; sourceTree = "<group>"; };
 		EAA5A6DB29E932C1001F9BEF /* LargeEventIcon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LargeEventIcon.swift; sourceTree = "<group>"; };
 		EAA5A6DD29E93516001F9BEF /* DetailedEventViewList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailedEventViewList.swift; sourceTree = "<group>"; };
-		EAA5A6DF29E935ED001F9BEF /* NextDaysView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NextDaysView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -152,7 +150,6 @@
 				1426306A29E5E2B700EDA95A /* onboardingContent3.swift */,
 				68A5809629E5D70900F74587 /* CategoryView.swift */,
 				73E7A04A29E5D4280019A979 /* FestivaisPage.swift */,
-				EAA5A6DF29E935ED001F9BEF /* NextDaysView.swift */,
 			);
 			path = Pages;
 			sourceTree = "<group>";
@@ -292,7 +289,6 @@
 				737F89D829E5EBE900AC1C19 /* MainView.swift in Sources */,
 				68A5809729E5D70900F74587 /* CategoryView.swift in Sources */,
 				EA5F37C129E494C100D7DE04 /* ContentView.swift in Sources */,
-				EAA5A6E029E935ED001F9BEF /* NextDaysView.swift in Sources */,
 				73E7A04B29E5D4280019A979 /* FestivaisPage.swift in Sources */,
 				EA5F37BF29E494C100D7DE04 /* PulaAppApp.swift in Sources */,
 				EA59A04629E6E3D5008BF790 /* EventCategoryList.swift in Sources */,

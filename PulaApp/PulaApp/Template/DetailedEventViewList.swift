@@ -10,6 +10,7 @@ import SwiftUI
 struct DetailedEventViewList: View {
     
     var events: [Event]
+    var viewTitle: String
     
     var body: some View {
         
@@ -25,6 +26,11 @@ struct DetailedEventViewList: View {
                     }
                 }
             }
+            .navigationTitle(viewTitle)
+            .navigationBarTitleDisplayMode(.inline)
+            .toolbarBackground(.visible, for: .navigationBar)
+            
+            
             
         }
         
@@ -37,6 +43,6 @@ struct DetailedEventViewList: View {
 
 struct DetailedEventViewList_Previews: PreviewProvider {
     static var previews: some View {
-        DetailedEventViewList(events: EventList.events)
+        DetailedEventViewList(events: EventList.events, viewTitle: "teste")
     }
 }
