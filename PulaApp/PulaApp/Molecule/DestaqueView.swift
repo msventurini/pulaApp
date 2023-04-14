@@ -22,8 +22,8 @@ struct destaqueView: View {
                         Image(event.image)
                             .resizable()//acertar esses com as novas assets
                             .aspectRatio(contentMode: .fill)
-                            .scaledToFit()//
-                            .frame(height:95)
+                            .scaledToFill()//
+                            .frame(width: 192, height:95)
                             .cornerRadius(8)
                     }
                     
